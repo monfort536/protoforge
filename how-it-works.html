@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html data-theme="light" dir="ltr">
+<head>
+    <script>
+    (function () {
+        const theme = localStorage.getItem("protoforge_theme") || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        const direction = localStorage.getItem("protoforge_direction") || "ltr";
+        document.documentElement.setAttribute("data-theme", theme);
+        document.documentElement.setAttribute("dir", direction);
+    })();
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProtoForge Studio | How It Works</title>
+    <meta name="description" content="ProtoForge Studio delivers high-precision 3D printing, rapid prototyping, custom manufacturing, and professional design consultation for businesses and innovators.">
+    <meta name="keywords" content="3D Printing, Prototyping, Manufacturing, ProtoForge, Industrial 3D Printing, Creative Prototyping">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="ProtoForge Studio">
+    <meta property="og:description" content="Bring your boldest ideas to life in 3D with our premium printing and prototyping services.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&h=630&fit=crop">
+    
+    <!-- Favicon -->
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20H80V80H20V20Z' stroke='%230066FF' stroke-width='8'/%3E%3Cpath d='M35 35H65V65H35V35Z' stroke='%2300E5FF' stroke-width='8'/%3E%3Cpath d='M50 50L80 20' stroke='%237B61FF' stroke-width='8'/%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+
+    <!-- Fonts: Inter for UI, Syne for Headings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/dark-mode.css">
+    <link rel="stylesheet" href="/assets/css/rtl.css">
+    <link rel="stylesheet" href="/assets/css/animations.css">
+    
+    
+</head>
+<body class="light-mode" data-bs-spy="scroll" data-bs-target="#navbar">
+    
+    <nav id="navbar" class="navbar navbar-expand-xl fixed-top pf-navbar clay-nav">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="/index.html">
+            <div class="logo-icon me-2">
+                <!-- SVG Logo placeholder -->
+                <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 20H80V80H20V20Z" stroke="currentColor" stroke-width="8"/>
+                    <path d="M35 35H65V65H35V35Z" stroke="currentColor" stroke-width="8"/>
+                    <path d="M50 50L80 20" stroke="currentColor" stroke-width="8"/>
+                </svg>
+            </div>
+            <span class="syne-font fw-bold fs-4">ProtoForge</span>
+        </a>
+        <button class="navbar-toggler clay-btn" type="button" data-bs-toggle="collapse" data-bs-target="#pfNavbar" aria-controls="pfNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="pfNavbar">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown pf-dropdown">
+                    <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Home
+                    </a>
+                    <ul class="dropdown-menu clay-dropdown border-0 shadow-lg">
+                        <li><a class="dropdown-item" href="/index.html">Home 01: Industrial</a></li>
+                        <li><a class="dropdown-item" href="/home-creative.html">Home 02: Creative</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="/about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="/services.html">Services</a>
+                </li>
+                  <li class="nav-item dropdown pf-dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Pages
+                      </a>
+                      <ul class="dropdown-menu clay-dropdown border-0 shadow-lg">
+                          <li><a class="dropdown-item" href="/materials.html">Materials</a></li>
+                          <li><a class="dropdown-item" href="/how-it-works.html">How It Works</a></li>
+                          <li><a class="dropdown-item" href="/faq.html">FAQ</a></li>
+                          <li><a class="dropdown-item" href="/404.html">404 Error</a></li>
+                          <li><a class="dropdown-item" href="/coming-soon.html">Coming Soon</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link " href="/pricing.html">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="/blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="/contact.html">Contact</a>
+                </li>
+            </ul>
+            <div class="d-flex align-items-center gap-3 auth-buttons-container">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <!-- Main Content -->
+    <main>
+        
+<section class="py-5 mt-5 bg-light text-center">
+    <div class="container fade-up">
+        <h1 class="display-4 fw-bold syne-font mb-3">How to Order</h1>
+        <p class="lead text-muted max-w-2xl mx-auto">From uploading your CAD file to receiving the physical product, our automated platform makes manufacturing seamless.</p>
+    </div>
+</section>
+
+<section class="py-6">
+    <div class="container">
+        <div class="row position-relative">
+            <!-- Vertical Line -->
+            <div class="position-absolute start-50 top-0 bottom-0 border-start border-2 border-primary border-opacity-25 d-none d-md-block" style="transform: translateX(-50%); z-index: 0;"></div>
+            
+            <!-- Step 1 -->
+            <div class="col-12 mb-5 fade-up position-relative z-1">
+                <div class="row align-items-center">
+                    <div class="col-md-5 text-md-end mb-4 mb-md-0">
+                        <div class="clay-card p-4 pf-hover-lift">
+                            <h4 class="syne-font fw-bold">Step 1: Upload Your Design</h4>
+                            <p class="text-muted small mb-3">Upload your 3D models securely to our platform. We support industry standard formats.</p>
+                            <div class="d-flex gap-2 justify-content-md-end flex-wrap">
+                                <span class="badge bg-secondary">STL</span>
+                                <span class="badge bg-secondary">OBJ</span>
+                                <span class="badge bg-secondary">STEP</span>
+                                <span class="badge bg-secondary">3MF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 text-center d-none d-md-block">
+                        <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mx-auto shadow" style="width: 60px; height: 60px; font-size: 1.5rem; font-weight: bold;">1</div>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="https://images.unsplash.com/photo-1618477388954-7852f32655ec?w=600&h=400&fit=crop" class="img-fluid rounded shadow-lg" alt="Upload Design">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="col-12 mb-5 fade-up position-relative z-1">
+                <div class="row align-items-center">
+                    <div class="col-md-5 order-3 order-md-1">
+                        <img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=600&h=400&fit=crop" class="img-fluid rounded shadow-lg" alt="Choose Material">
+                    </div>
+                    <div class="col-md-2 text-center order-2 d-none d-md-block">
+                        <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mx-auto shadow" style="width: 60px; height: 60px; font-size: 1.5rem; font-weight: bold;">2</div>
+                    </div>
+                    <div class="col-md-5 order-1 order-md-3 mb-4 mb-md-0">
+                        <div class="clay-card p-4 pf-hover-lift">
+                            <h4 class="syne-font fw-bold">Step 2: Choose Material</h4>
+                            <p class="text-muted small mb-0">Select from our wide range of engineering polymers, resins, or composites based on your required mechanical properties.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="col-12 mb-5 fade-up position-relative z-1">
+                <div class="row align-items-center">
+                    <div class="col-md-5 text-md-end mb-4 mb-md-0">
+                        <div class="clay-card p-4 pf-hover-lift">
+                            <h4 class="syne-font fw-bold">Step 3: Select Finish</h4>
+                            <p class="text-muted small mb-0">Choose your post-processing options. From raw printed parts to vapor-smoothed glossy finishes or custom painting.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 text-center d-none d-md-block">
+                        <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mx-auto shadow" style="width: 60px; height: 60px; font-size: 1.5rem; font-weight: bold;">3</div>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="https://images.unsplash.com/photo-1581092335397-9583eb92d232?w=600&h=400&fit=crop" class="img-fluid rounded shadow-lg" alt="Select Finish">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="col-12 mb-5 fade-up position-relative z-1">
+                <div class="row align-items-center">
+                    <div class="col-md-5 order-3 order-md-1">
+                        <div class="clay-card p-4 bg-primary text-white border-0 text-center">
+                            <h2 class="display-5 fw-bold mb-0">$45.00</h2>
+                            <p class="small opacity-75">Estimated Total</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 text-center order-2 d-none d-md-block">
+                        <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mx-auto shadow" style="width: 60px; height: 60px; font-size: 1.5rem; font-weight: bold;">4</div>
+                    </div>
+                    <div class="col-md-5 order-1 order-md-3 mb-4 mb-md-0">
+                        <div class="clay-card p-4 pf-hover-lift">
+                            <h4 class="syne-font fw-bold">Step 4: Get Instant Estimate</h4>
+                            <p class="text-muted small mb-0">Our automated system analyzes your file's volume and generates an instant, accurate quote.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 5, 6, 7 compressed for layout brevity -->
+            <div class="col-12 text-center fade-up mt-5">
+                <div class="d-flex justify-content-center gap-4 flex-wrap">
+                    <div class="clay-card p-3 d-inline-block text-center" style="width: 200px;">
+                        <h3 class="fw-bold text-primary-pf">5</h3>
+                        <h6 class="fw-bold mb-0">Confirm Order</h6>
+                    </div>
+                    <div class="clay-card p-3 d-inline-block text-center" style="width: 200px;">
+                        <h3 class="fw-bold text-primary-pf">6</h3>
+                        <h6 class="fw-bold mb-0">Track Production</h6>
+                    </div>
+                    <div class="clay-card p-3 d-inline-block text-center" style="width: 200px;">
+                        <h3 class="fw-bold text-primary-pf">7</h3>
+                        <h6 class="fw-bold mb-0">Receive Print</h6>
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <a href="/upload-design.html" class="btn pf-btn-primary btn-lg">Upload Your Design Now</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="pf-footer pt-5 pb-4 mt-5 clay-footer">
+    <div class="container">
+        <div class="row gy-5 mb-5">
+            <div class="col-lg-4 col-md-6">
+                <a class="navbar-brand d-flex align-items-center mb-3" href="/index.html">
+                    <div class="logo-icon me-2">
+                        <svg width="30" height="30" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 20H80V80H20V20Z" stroke="currentColor" stroke-width="8"/>
+                            <path d="M35 35H65V65H35V35Z" stroke="currentColor" stroke-width="8"/>
+                            <path d="M50 50L80 20" stroke="currentColor" stroke-width="8"/>
+                        </svg>
+                    </div>
+                    <span class="syne-font fw-bold fs-4 pf-text-primary">ProtoForge</span>
+                </a>
+                <p class="text-muted mb-4 pe-lg-4">Making professional 3D manufacturing accessible to everyone. From digital ideas to physical reality.</p>
+                <div class="d-flex gap-3 social-icons">
+                    <a href="https://x.com/" target="_blank" rel="noopener noreferrer" class="clay-icon-btn"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="clay-icon-btn"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="clay-icon-btn"><i class="bi bi-instagram"></i></a>
+                    <a href="https://youtube.com/" target="_blank" rel="noopener noreferrer" class="clay-icon-btn"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-6">
+                <h5 class="fw-bold mb-4 syne-font">Company</h5>
+                <ul class="list-unstyled pf-footer-links">
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/coming-soon.html">Careers</a></li>
+                    <li><a href="/blog.html">Blog</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 col-6">
+                <h5 class="fw-bold mb-4 syne-font">Services</h5>
+                <ul class="list-unstyled pf-footer-links">
+                    <li><a href="/services.html">Rapid Prototyping</a></li>
+                    <li><a href="/services.html">Custom Parts</a></li>
+                    <li><a href="/services.html">Industrial Printing</a></li>
+                    <li><a href="/services2.html">Creative Printing</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 col-6">
+                <h5 class="fw-bold mb-4 syne-font">Resources</h5>
+                <ul class="list-unstyled pf-footer-links">
+                    <li><a href="/materials.html">Materials</a></li>
+                    <li><a href="/pricing.html">Pricing</a></li>
+                    <li><a href="/how-it-works.html">How to Order</a></li>
+                    <li><a href="/faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 col-6">
+                <h5 class="fw-bold mb-4 syne-font">Account</h5>
+                <ul class="list-unstyled pf-footer-links">
+                    <li><a href="/login.html">Login</a></li>
+                    <li><a href="/register.html">Register</a></li>
+                    <li><a href="/dashboard/client-dashboard.html">Dashboard</a></li>
+                    <li><a href="/dashboard/orders.html">Orders</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="row mb-5">
+            <div class="col-lg-6 mx-auto text-center">
+                <div class="clay-card p-4 pf-newsletter-card">
+                    <h4 class="syne-font fw-bold mb-2">Stay Ahead of the Next Dimension</h4>
+                    <p class="text-muted small mb-4">Get updates about 3D printing technology, materials, design trends, and ProtoForge innovations.</p>
+                    <form action="https://formsubmit.co/clament.iq@outlook.com" method="POST" class="d-flex gap-2">
+                        <input type="email" name="email" class="form-control pf-input" placeholder="Enter your email" required>
+                        <input type="hidden" name="_next" value="/index.html">
+                        <button type="submit" class="btn btn-primary pf-btn-primary px-4">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="row pt-4 border-top border-secondary-subtle align-items-center">
+            <div class="col-12 text-center">
+                <p class="text-muted small mb-0">&copy; 2026 ProtoForge Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core Scripts -->
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/auth.js"></script>
+
+    
+    <script src="/assets/js/theme-rtl.js"></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html data-theme="light" dir="ltr">
+<head>
+    <script>
+    (function () {
+        const theme = localStorage.getItem("protoforge_theme") || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        const direction = localStorage.getItem("protoforge_direction") || "ltr";
+        document.documentElement.setAttribute("data-theme", theme);
+        document.documentElement.setAttribute("dir", direction);
+    })();
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProtoForge Studio | Register</title>
+    <meta name="description" content="ProtoForge Studio delivers high-precision 3D printing, rapid prototyping, custom manufacturing, and professional design consultation for businesses and innovators.">
+    <meta name="keywords" content="3D Printing, Prototyping, Manufacturing, ProtoForge, Industrial 3D Printing, Creative Prototyping">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="ProtoForge Studio">
+    <meta property="og:description" content="Bring your boldest ideas to life in 3D with our premium printing and prototyping services.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&h=630&fit=crop">
+    
+    <!-- Favicon -->
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20H80V80H20V20Z' stroke='%230066FF' stroke-width='8'/%3E%3Cpath d='M35 35H65V65H35V35Z' stroke='%2300E5FF' stroke-width='8'/%3E%3Cpath d='M50 50L80 20' stroke='%237B61FF' stroke-width='8'/%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+
+    <!-- Fonts: Inter for UI, Syne for Headings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/dark-mode.css">
+    <link rel="stylesheet" href="/assets/css/rtl.css">
+    <link rel="stylesheet" href="/assets/css/animations.css">
+    
+    
+</head>
+
+<body class="light-mode">
+
+    <!-- Minimal Header for Auth Pages -->
+    <header class="position-absolute top-0 start-0 w-100 p-3 p-md-4 d-flex justify-content-between align-items-center" style="z-index: 1050;">
+        <a class="d-flex align-items-center text-decoration-none" href="/index.html" style="color: var(--text-primary);">
+            <div class="logo-icon me-2 text-primary-pf">
+                <svg width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 20H80V80H20V20Z" stroke="currentColor" stroke-width="8"/>
+                    <path d="M35 35H65V65H35V35Z" stroke="currentColor" stroke-width="8"/>
+                    <path d="M50 50L80 20" stroke="currentColor" stroke-width="8"/>
+                </svg>
+            </div>
+            <span class="syne-font fw-bold fs-5 fs-md-4 d-none d-sm-block">ProtoForge</span>
+        </a>
+
+        <div class="d-flex gap-2">
+            <button class="btn border rounded-4 d-flex align-items-center justify-content-center bg-transparent shadow-sm pf-hover-lift" id="themeToggle" style="width: 38px; height: 38px; color: var(--text-primary); border-color: var(--border-color) !important; transition: all 0.3s ease;">
+                <i class="bi bi-moon-stars"></i>
+            </button>
+            <button class="btn border rounded-4 d-flex align-items-center justify-content-center bg-transparent shadow-sm pf-hover-lift" id="rtlToggle" style="width: 38px; height: 38px; color: var(--text-primary); border-color: var(--border-color) !important; transition: all 0.3s ease;">
+                <span class="ltr-text fw-bold" style="font-size: 0.8rem;">RTL</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="min-vh-100 d-flex align-items-center py-5 pt-md-5 bg-light" style="padding-top: 6rem !important;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-lg-6">
+                        <div class="clay-card p-4 p-md-5">
+                            <div class="text-center mb-5">
+                                <h2 class="syne-font fw-bold mb-2">Create Account</h2>
+                                <p class="text-muted">Join ProtoForge to manage your prints, orders, and materials.</p>
+                            </div>
+                            
+                            <form id="registerForm" class="needs-validation" novalidate>
+                                <div class="mb-4">
+                                    <label class="form-label fw-bold small text-muted">Full Name</label>
+                                    <input type="text" class="form-control pf-input" id="name" placeholder="John Doe" required minlength="3">
+                                    <div class="invalid-feedback">Please enter your full name (at least 3 characters).</div>
+                                </div>
+
+                                <div class="mb-4">
+                                    <label class="form-label fw-bold small text-muted">Email Address</label>
+                                    <input type="email" class="form-control pf-input" id="email" placeholder="name@company.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                                </div>
+                                
+                                <div class="row mb-4">
+                                    <div class="col-md-6 mb-4 mb-md-0 position-relative">
+                                        <label class="form-label fw-bold small text-muted">Password</label>
+                                        <div class="input-group has-validation">
+                                            <input type="password" id="password" class="form-control pf-input border-end-0" required minlength="8" placeholder="••••••••">
+                                            <div class="invalid-feedback mt-2" >Password must be at least 8 characters.</div>
+                                            <span class="input-group-text bg-transparent border-0 pe-3 pf-input position-absolute end-0 top-0 bottom-0 z-3 cursor-pointer" onclick="togglePassword('password', this)" style="cursor: pointer;">
+                                                <i class="bi bi-eye text-muted"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 position-relative">
+                                        <label class="form-label fw-bold small text-muted">Confirm Password</label>
+                                        <div class="input-group has-validation">
+                                            <input type="password" id="confirmPassword" class="form-control pf-input border-end-0" required placeholder="••••••••">
+                                            <div class="invalid-feedback mt-2" id="confirmPassFeedback" >Passwords do not match.</div>
+                                            <span class="input-group-text bg-transparent border-0 pe-3 pf-input position-absolute end-0 top-0 bottom-0 z-3 cursor-pointer" onclick="togglePassword('confirmPassword', this)" style="cursor: pointer;">
+                                                <i class="bi bi-eye text-muted"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-4 form-check">
+                                    <input type="checkbox" class="form-check-input" id="terms" required>
+                                    <div class="invalid-feedback">You must agree before submitting.</div>
+                                    <label class="form-check-label small text-muted" for="terms">I agree to the <a href="#" class="text-primary-pf text-decoration-none">Terms & Conditions</a> and <a href="#" class="text-primary-pf text-decoration-none">Privacy Policy</a>.</label>
+                                </div>
+                                <button type="submit" class="btn pf-btn-primary w-100 mb-4 rounded-pill py-2">Create Account</button>
+                            </form>
+                            
+                            <div class="text-center">
+                                <p class="small text-muted mb-0">Already have an account? <a href="/login.html" class="text-primary-pf fw-bold text-decoration-none">Sign In</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- GSAP & ScrollTrigger -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core Scripts -->
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/auth.js"></script>
+
+    
+<script>
+    function togglePassword(id, el) {
+        const input = document.getElementById(id);
+        const icon = el.querySelector('i');
+        if (input.type === 'password') {
+            input.type = 'text';
+            icon.classList.remove('bi-eye');
+            icon.classList.add('bi-eye-slash');
+        } else {
+            input.type = 'password';
+            icon.classList.remove('bi-eye-slash');
+            icon.classList.add('bi-eye');
+        }
+    }
+
+    function checkStrength(password) {
+        const bar = document.getElementById('pwdStrength');
+        const text = document.getElementById('pwdText');
+        let strength = 0;
+        
+        if (password.length > 5) strength += 25;
+        if (password.match(/[a-z]+/)) strength += 25;
+        if (password.match(/[A-Z]+/)) strength += 25;
+        if (password.match(/[0-9]+/) || password.match(/[\W_]+/)) strength += 25;
+
+        bar.style.width = strength + '%';
+        
+        if (strength < 50) {
+            bar.className = 'progress-bar bg-danger';
+            text.textContent = 'Weak';
+        } else if (strength < 75) {
+            bar.className = 'progress-bar bg-warning';
+            text.textContent = 'Medium';
+        } else {
+            bar.className = 'progress-bar bg-success';
+            text.textContent = 'Strong';
+        }
+    }
+</script>
+
+    <script src="/assets/js/theme-rtl.js"></script>
+</body>
+</html>

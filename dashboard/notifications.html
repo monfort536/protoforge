@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html data-theme="light" dir="ltr">
+<head>
+<link href="data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20H80V80H20V20Z' stroke='%230066FF' stroke-width='8'/%3E%3Cpath d='M35 35H65V65H35V35Z' stroke='%2300E5FF' stroke-width='8'/%3E%3Cpath d='M50 50L80 20' stroke='%237B61FF' stroke-width='8'/%3E%3C/svg%3E" rel="icon" type="image/svg+xml"/>
+<script>
+    (function () {
+        const theme = localStorage.getItem("protoforge_theme") || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        const direction = localStorage.getItem("protoforge_direction") || "ltr";
+        document.documentElement.setAttribute("data-theme", theme);
+        document.documentElement.setAttribute("dir", direction);
+    })();
+    </script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ProtoForge Dashboard | Notifications</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Syne:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+<link href="/assets/css/style.css" rel="stylesheet"/>
+<link href="/assets/css/dark-mode.css" rel="stylesheet"/>
+<link href="/assets/css/rtl.css" rel="stylesheet"/>
+<link href="/assets/css/animations.css" rel="stylesheet"/>
+<style>
+        .dashboard-container {
+            display: flex;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        .dashboard-sidebar {
+            width: 280px;
+            background: var(--bg-secondary);
+            top: 0;
+            left: 0;
+            border-right: 1px solid var(--border-color);
+            position: fixed;
+            height: 100vh;
+            overflow-y: auto;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        .dashboard-content {
+            flex-grow: 1;
+            margin-left: 280px;
+            width: calc(100% - 280px);
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+        .sidebar-link {
+            display: flex;
+            align-items: center;
+            padding: 0.75rem 1.5rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border-radius: 0 24px 24px 0;
+            margin-right: 1rem;
+        }
+        .sidebar-link:hover {
+            color: var(--pf-electric-blue);
+            background: var(--clay-bg);
+        }
+        .sidebar-link.active {
+            color: var(--pf-electric-blue);
+            background: rgba(0, 102, 255, 0.1);
+            font-weight: 600;
+        }
+        
+        @media (max-width: 991.98px) {
+            .dashboard-sidebar {
+                transform: translateX(-100%);
+            }
+            .dashboard-sidebar.show {
+                transform: translateX(0);
+            }
+            .dashboard-content {
+                margin-left: 0;
+                width: 100%;
+                padding: 1rem;
+            }
+        }
+
+        /* RTL specific sidebar adjustment is in rtl.css */
+        html[dir="rtl"] .dashboard-sidebar {
+            left: auto;
+            right: 0;
+        }
+        html[dir="rtl"] .dashboard-content {
+            margin-left: 0;
+            margin-right: 280px;
+            width: calc(100% - 280px);
+        }
+        html[dir="rtl"] .sidebar-link {
+            border-radius: 24px 0 0 24px;
+            margin-right: 0;
+            margin-left: 1rem;
+        }
+        @media (max-width: 991.98px) {
+            html[dir="rtl"] .dashboard-sidebar {
+                transform: translateX(100%);
+            }
+            html[dir="rtl"] .dashboard-sidebar.show {
+                transform: translateX(0);
+            }
+            html[dir="rtl"] .dashboard-content {
+                margin-right: 0;
+                width: 100%;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body class="theme-body">
+<div class="dashboard-container">
+<!-- Sidebar -->
+<aside class="dashboard-sidebar" id="sidebar">
+<div class="p-4 border-bottom border-secondary-subtle d-flex align-items-center justify-content-between">
+<a class="navbar-brand d-flex align-items-center text-decoration-none" href="/index.html">
+<div class="logo-icon me-2 text-primary-pf">
+<svg fill="none" height="30" viewbox="0 0 100 100" width="30" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 20H80V80H20V20Z" stroke="currentColor" stroke-width="8"></path>
+<path d="M35 35H65V65H35V35Z" stroke="currentColor" stroke-width="8"></path>
+<path d="M50 50L80 20" stroke="currentColor" stroke-width="8"></path>
+</svg>
+</div>
+<span class="syne-font fw-bold fs-5 text-dark">ProtoForge</span>
+</a>
+<button class="btn btn-sm d-lg-none" id="closeSidebar"><i class="bi bi-x-lg"></i></button>
+</div>
+<div class="py-4">
+<p class="px-4 text-muted small fw-bold text-uppercase mb-2 tracking-wide">Client Menu</p>
+<a class="sidebar-link" href="/dashboard/client-dashboard.html"><i class="bi bi-grid-1x2-fill me-3"></i> Dashboard</a>
+<a class="sidebar-link" href="/dashboard/my-print-jobs.html"><i class="bi bi-printer-fill me-3"></i> My Print Jobs</a>
+<a class="sidebar-link" href="/dashboard/upload-design.html"><i class="bi bi-cloud-upload-fill me-3"></i> Upload Design</a>
+<a class="sidebar-link" href="/dashboard/orders.html"><i class="bi bi-box-seam-fill me-3"></i> Orders</a>
+<a class="sidebar-link" href="/dashboard/payments.html"><i class="bi bi-credit-card-fill me-3"></i> Payments</a>
+<p class="px-4 text-muted small fw-bold text-uppercase mb-2 mt-4 tracking-wide">Account</p>
+<a class="sidebar-link" href="/dashboard/profile.html"><i class="bi bi-person-fill me-3"></i> Profile</a>
+<a class="sidebar-link active" href="/dashboard/notifications.html"><i class="bi bi-bell-fill me-3"></i> Notifications <span class="badge bg-danger rounded-pill ms-auto">3</span></a>
+<a class="sidebar-link" href="#" onclick="logout()"><i class="bi bi-box-arrow-right me-3"></i> Logout</a>
+</div>
+</aside>
+<!-- Main Content -->
+<main class="dashboard-content">
+<!-- Header -->
+<header class="d-flex justify-content-between align-items-center mb-5">
+<div class="d-flex align-items-center flex-grow-1 overflow-hidden me-3">
+    <button class="btn clay-btn d-lg-none me-3 flex-shrink-0" id="openSidebar"><i class="bi bi-list"></i></button>
+    <h2 class="syne-font fw-bold mb-0 fs-6 fs-md-2 text-truncate" style="min-width: 0;">Notifications</h2>
+  </div>
+<div class="d-flex align-items-center gap-3">
+
+<div class="d-flex gap-2">
+<button class="btn border rounded-4 d-flex align-items-center justify-content-center bg-transparent shadow-sm" id="themeToggleDash" style="width: 42px; height: 42px; color: var(--text-primary); border-color: var(--border-color) !important; transition: all 0.3s ease;"></button>
+<button class="btn border rounded-4 d-flex align-items-center justify-content-center bg-transparent shadow-sm" id="rtlToggleDash" style="width: 42px; height: 42px; color: var(--text-primary); border-color: var(--border-color) !important; transition: all 0.3s ease;"></button>
+</div>
+
+<div class="dropdown pf-dropdown">
+<button class="clay-icon-btn border-0" data-bs-toggle="dropdown"><i class="bi bi-bell"></i><span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle"><span class="visually-hidden">New alerts</span></span></button>
+<ul class="dropdown-menu dropdown-menu-end clay-dropdown p-3" style="width: 300px;">
+<li><h6 class="dropdown-header fw-bold text-dark">Notifications</h6></li>
+<li><hr class="dropdown-divider"/></li>
+<li><a class="dropdown-item py-2" href="#"><div class="d-flex"><i class="bi bi-check-circle text-success me-2 mt-1"></i><div><p class="mb-0 small fw-bold text-dark">Print job #1244 finished</p><p class="mb-0 small text-muted">Just now</p></div></div></a></li>
+<li><a class="dropdown-item py-2" href="#"><div class="d-flex"><i class="bi bi-box text-primary-pf me-2 mt-1"></i><div><p class="mb-0 small fw-bold text-dark">Order #5992 shipped</p><p class="mb-0 small text-muted">2 hours ago</p></div></div></a></li>
+<li><a class="dropdown-item py-2" href="#"><div class="d-flex"><i class="bi bi-exclamation-circle text-warning me-2 mt-1"></i><div><p class="mb-0 small fw-bold text-dark">File review needed</p><p class="mb-0 small text-muted">Yesterday</p></div></div></a></li>
+<li><hr class="dropdown-divider"/></li>
+<li><a class="dropdown-item text-center small text-primary-pf fw-bold" href="#">View All</a></li>
+</ul>
+</div>
+<div class="dropdown pf-dropdown">
+<button class="btn border-0 p-0 d-flex align-items-center" data-bs-toggle="dropdown">
+<img alt="Profile" class="rounded-circle shadow-sm" src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=100&amp;h=100&amp;fit=crop" style="width: 40px; height: 40px;"/>
+</button>
+<ul class="dropdown-menu dropdown-menu-end clay-dropdown">
+<li><a class="dropdown-item" href="/dashboard/profile.html">Profile</a></li>
+<li><a class="dropdown-item" href="#" onclick="logout()">Logout</a></li>
+</ul>
+</div>
+</div>
+</header>
+<div class="row g-4 mb-5">
+<div class="col-12">
+<div class="clay-card p-4">
+<h5 class="syne-font fw-bold mb-4">Recent Alerts</h5>
+<div class="list-group list-group-flush">
+<a class="list-group-item list-group-item-action py-3 border-bottom border-secondary-subtle bg-transparent" href="#">
+<div class="d-flex w-100 justify-content-between">
+<h6 class="mb-1 fw-bold text-dark"><i class="bi bi-check-circle-fill text-success me-2"></i> Print job #1244 finished</h6>
+<small class="text-muted">Just now</small>
+</div>
+<p class="mb-1 small text-muted ms-4">Your resin parts have been washed, cured, and are ready for shipping.</p>
+</a>
+<a class="list-group-item list-group-item-action py-3 border-bottom border-secondary-subtle bg-transparent" href="#">
+<div class="d-flex w-100 justify-content-between">
+<h6 class="mb-1 fw-bold text-dark"><i class="bi bi-box-fill text-primary-pf me-2"></i> Order #5992 shipped</h6>
+<small class="text-muted">2 hours ago</small>
+</div>
+<p class="mb-1 small text-muted ms-4">Tracking number: 1Z9999999999999999</p>
+</a>
+<a class="list-group-item list-group-item-action py-3 bg-transparent" href="#">
+<div class="d-flex w-100 justify-content-between">
+<h6 class="mb-1 fw-bold text-dark"><i class="bi bi-exclamation-triangle-fill text-warning me-2"></i> File review needed</h6>
+<small class="text-muted">Yesterday</small>
+</div>
+<p class="mb-1 small text-muted ms-4">We detected some non-manifold edges in your recent STL upload. Please review the repair preview.</p>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-12">
+<div class="clay-card p-4">
+<div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-3 mb-4">
+<h5 class="syne-font fw-bold mb-0">Recent Active Jobs</h5>
+<a class="btn btn-sm pf-btn-secondary" href="/dashboard/my-print-jobs.html">View All</a>
+</div>
+<div class="table-responsive">
+<table class="table table-hover align-middle mb-0">
+<thead class="table-light">
+<tr>
+<th class="border-0 rounded-start">Job ID</th>
+<th class="border-0">Project Name</th>
+<th class="border-0">Material</th>
+<th class="border-0">Status</th>
+<th class="border-0 rounded-end">Est. Completion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="fw-bold text-primary-pf">#PJ-9021</span></td>
+<td>Drone Chassis V2</td>
+<td>PA-CF</td>
+<td><span class="badge bg-primary">Printing</span></td>
+<td>Oct 12, 2026</td>
+</tr>
+<tr>
+<td><span class="fw-bold text-primary-pf">#PJ-9022</span></td>
+<td>Mechanical Gear Setup</td>
+<td>Nylon</td>
+<td><span class="badge bg-warning text-dark">File Review</span></td>
+<td>Oct 14, 2026</td>
+</tr>
+<tr>
+<td><span class="fw-bold text-primary-pf">#PJ-9020</span></td>
+<td>Custom Action Figure</td>
+<td>Resin</td>
+<td><span class="badge bg-info">Post Processing</span></td>
+<td>Oct 10, 2026</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+
+            // Sidebar Toggle
+            const sidebar = document.getElementById('sidebar');
+            const openSidebar = document.getElementById('openSidebar');
+            const closeSidebar = document.getElementById('closeSidebar');
+
+            openSidebar?.addEventListener('click', () => sidebar.classList.add('show'));
+            closeSidebar?.addEventListener('click', () => sidebar.classList.remove('show'));
+            
+            // Check auth
+            const currentUser = JSON.parse(localStorage.getItem('protoforge_current_user'));
+            if(!currentUser) {
+                window.location.href = '/login.html';
+            }
+        });
+
+        function logout() {
+            localStorage.removeItem('protoforge_current_user');
+            window.location.href = '/index.html';
+        }
+    </script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Dummy Charts
+        
+    });
+</script>
+<script src="/assets/js/theme-rtl.js"></script>
+</body>
+</html>

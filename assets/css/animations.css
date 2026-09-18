@@ -1,0 +1,74 @@
+/* animations.css */
+
+/* Loading Cube Animation */
+.cube-loader {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotateCube 4s infinite linear;
+    margin: 0 auto;
+}
+
+.cube-face {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 2px solid var(--pf-electric-blue);
+    background: rgba(0, 102, 255, 0.1);
+}
+
+.front  { transform: translateZ(30px); }
+.back   { transform: rotateY(180deg) translateZ(30px); }
+.left   { transform: rotateY(-90deg) translateZ(30px); }
+.right  { transform: rotateY(90deg) translateZ(30px); }
+.top    { transform: rotateX(90deg) translateZ(30px); }
+.bottom { transform: rotateX(-90deg) translateZ(30px); }
+
+.printer-laser {
+    position: absolute;
+    top: -20px;
+    left: 30px;
+    width: 2px;
+    height: 100px;
+    background: var(--pf-cyan);
+    box-shadow: 0 0 10px var(--pf-cyan);
+    animation: scanLaser 2s infinite ease-in-out alternate;
+}
+
+@keyframes rotateCube {
+    0% { transform: rotateX(0) rotateY(0); }
+    100% { transform: rotateX(360deg) rotateY(360deg); }
+}
+
+@keyframes scanLaser {
+    0% { transform: translateX(-20px); }
+    100% { transform: translateX(20px); }
+}
+
+/* Float Animation */
+.float-anim {
+    animation: float 6s ease-in-out infinite;
+}
+
+.float-anim-delayed {
+    animation: float 6s ease-in-out 3s infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Gradient Text Animation */
+.gradient-text-anim {
+    background-size: 200% auto;
+    animation: gradientShift 5s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}

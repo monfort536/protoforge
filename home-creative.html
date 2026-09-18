@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<html data-theme="light" dir="ltr">
+<head>
+<script>
+    (function () {
+        const theme = localStorage.getItem("protoforge_theme") || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        const direction = localStorage.getItem("protoforge_direction") || "ltr";
+        document.documentElement.setAttribute("data-theme", theme);
+        document.documentElement.setAttribute("dir", direction);
+    })();
+    </script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ProtoForge Studio | Creative Prototyping &amp; Custom Printing</title>
+<meta content="ProtoForge Studio delivers high-precision 3D printing, rapid prototyping, custom manufacturing, and professional design consultation for businesses and innovators." name="description"/>
+<meta content="3D Printing, Prototyping, Manufacturing, ProtoForge, Industrial 3D Printing, Creative Prototyping" name="keywords"/>
+<!-- Open Graph Tags -->
+<meta content="ProtoForge Studio" property="og:title"/>
+<meta content="Bring your boldest ideas to life in 3D with our premium printing and prototyping services." property="og:description"/>
+<meta content="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&amp;h=630&amp;fit=crop" property="og:image"/>
+<!-- Favicon -->
+<link href="data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20H80V80H20V20Z' stroke='%230066FF' stroke-width='8'/%3E%3Cpath d='M35 35H65V65H35V35Z' stroke='%2300E5FF' stroke-width='8'/%3E%3Cpath d='M50 50L80 20' stroke='%237B61FF' stroke-width='8'/%3E%3C/svg%3E" rel="icon" type="image/svg+xml"/>
+<link href="/assets/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<!-- Fonts: Inter for UI, Syne for Headings -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Syne:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+<!-- Custom CSS -->
+<link href="/assets/css/style.css" rel="stylesheet"/>
+<link href="/assets/css/dark-mode.css" rel="stylesheet"/>
+<link href="/assets/css/rtl.css" rel="stylesheet"/>
+<link href="/assets/css/animations.css" rel="stylesheet"/>
+</head>
+<body class="light-mode" data-bs-spy="scroll" data-bs-target="#navbar">
+<nav class="navbar navbar-expand-xl fixed-top pf-navbar clay-nav" id="navbar">
+<div class="container">
+<a class="navbar-brand d-flex align-items-center" href="/index.html">
+<div class="logo-icon me-2">
+<!-- SVG Logo placeholder -->
+<svg fill="none" height="40" viewbox="0 0 100 100" width="40" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 20H80V80H20V20Z" stroke="currentColor" stroke-width="8"></path>
+<path d="M35 35H65V65H35V35Z" stroke="currentColor" stroke-width="8"></path>
+<path d="M50 50L80 20" stroke="currentColor" stroke-width="8"></path>
+</svg>
+</div>
+<span class="syne-font fw-bold fs-4">ProtoForge</span>
+</a>
+<button aria-controls="pfNavbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler clay-btn" data-bs-target="#pfNavbar" data-bs-toggle="collapse" type="button">
+<i class="bi bi-list"></i>
+</button>
+<div class="collapse navbar-collapse" id="pfNavbar">
+<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+<li class="nav-item dropdown pf-dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button">
+                        Home
+                    </a>
+<ul class="dropdown-menu clay-dropdown border-0 shadow-lg">
+<li><a class="dropdown-item" href="/index.html">Home 01: Industrial</a></li>
+<li><a class="dropdown-item" href="/home-creative.html">Home 02: Creative</a></li>
+</ul>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/about.html">About</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/services2.html">Services</a>
+</li>
+                  <li class="nav-item dropdown pf-dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Pages
+                      </a>
+                      <ul class="dropdown-menu clay-dropdown border-0 shadow-lg">
+                          <li><a class="dropdown-item" href="/materials.html">Materials</a></li>
+                          <li><a class="dropdown-item" href="/how-it-works.html">How It Works</a></li>
+                          <li><a class="dropdown-item" href="/faq.html">FAQ</a></li>
+                          <li><a class="dropdown-item" href="/404.html">404 Error</a></li>
+                          <li><a class="dropdown-item" href="/coming-soon.html">Coming Soon</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link " href="/pricing.html">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+<a class="nav-link" href="/blog2.html">Blog</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/contact.html">Contact</a>
+</li>
+</ul>
+<div class="d-flex align-items-center gap-3 auth-buttons-container">
+<!-- Populated by JS -->
+</div>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main>
+<!-- Creative Hero Section -->
+<section class="hero-creative">
+<div class="container relative z-1">
+<div class="row align-items-center">
+<div class="col-lg-6 hero-content text-center text-lg-start">
+<span class="badge bg-creative bg-opacity-10 text-creative-pf px-3 py-2 rounded-pill mb-4 border border-creative border-opacity-25" style="border-color: var(--pf-purple) !important;">ProtoForge Creative</span>
+<h1 class="display-3 fw-bold syne-font mb-4">Bring Your <span class="text-creative-pf gradient-text-anim">Boldest Ideas</span> to Life in 3D</h1>
+<p class="lead text-muted mb-5 pe-lg-5">Upload your design, choose your material, customize the finish, and watch your imagination become a real physical creation.</p>
+<div class="d-flex gap-2 gap-sm-3 justify-content-center justify-content-lg-start">
+<a class="btn pf-btn-primary px-2 px-md-4 text-nowrap" href="/upload-design.html" style="background: var(--gradient-creative); font-size: 0.85rem;">Upload Your Design</a>
+<a class="btn pf-btn-secondary px-2 px-md-4 text-nowrap" href="/materials.html" style="font-size: 0.85rem;">Discover Materials</a>
+</div>
+</div>
+<div class="col-lg-6 position-relative hero-visual mt-5 mt-lg-0">
+<div class="position-relative d-flex justify-content-center">
+<!-- A creative cluster of images -->
+<div class="clay-card p-2 float-anim z-3" style="width: 60%; transform: rotate(-5deg);">
+<img alt="Creative 3D Print" class="img-fluid rounded" src="/assets/images/blog2/creative_ideas.jpg"/>
+</div>
+<div class="clay-card p-2 float-anim-delayed position-absolute z-2" style="width: 50%; right: 0; bottom: -20px; transform: rotate(10deg);">
+<img alt="Colorful Print" class="img-fluid rounded" src="/assets/images/services2/custom_figurines.jpg"/>
+</div>
+<div class="clay-card p-2 float-anim position-absolute z-1" style="width: 40%; left: 0; top: -30px; transform: rotate(-15deg);">
+<img alt="Artistic Sculpture" class="img-fluid rounded" src="/assets/images/services2/artistic_sculptures.jpg"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Floating 3D Gallery / Popular Creations -->
+<section class="py-6 my-5">
+<div class="container fade-up">
+<div class="text-center mb-5">
+<h2 class="display-5 fw-bold syne-font">Popular Creations</h2>
+<p class="lead text-muted">See what other creators are building with ProtoForge.</p>
+</div>
+<div class="row g-4 stagger-cards">
+<!-- Item 1 -->
+<div class="col-md-4">
+<div class="clay-card p-3 h-100 pf-hover-lift text-center">
+<img alt="Custom Figurine" class="img-fluid rounded mb-3" src="/assets/images/services2/board_game_parts.jpg" style="aspect-ratio: 1/1; object-fit: cover;"/>
+<h5 class="syne-font fw-bold mb-1">Custom Figurines</h5>
+<p class="text-muted small">Resin • High Detail</p>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="col-md-4">
+<div class="clay-card p-3 h-100 pf-hover-lift text-center">
+<img alt="Artistic Sculpture" class="img-fluid rounded mb-3" src="/assets/images/blog2/artists_3d.jpg" style="aspect-ratio: 1/1; object-fit: cover;"/>
+<h5 class="syne-font fw-bold mb-1">Artistic Sculptures</h5>
+<p class="text-muted small">PLA • Matte Finish</p>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="col-md-4">
+<div class="clay-card p-3 h-100 pf-hover-lift text-center">
+<img alt="Cosplay Parts" class="img-fluid rounded mb-3" src="/assets/images/services2/cosplay_props.jpg" style="aspect-ratio: 1/1; object-fit: cover;"/>
+<h5 class="syne-font fw-bold mb-1">Cosplay Parts</h5>
+<p class="text-muted small">PETG • Durable</p>
+</div>
+</div>
+</div>
+<div class="text-center mt-5">
+<a class="btn pf-btn-secondary" href="/services2.html">Explore All Creative Services</a>
+</div>
+</div>
+</section>
+
+<!-- Features Section -->
+<section class="py-6 bg-light mt-5">
+<div class="container">
+<div class="text-center mb-5">
+<span class="badge bg-purple mb-2" style="background-color: var(--pf-purple);">Why Choose Us</span>
+<h2 class="syne-font fw-bold">Empowering Your Creativity</h2>
+<p class="text-muted w-75 mx-auto mt-3">From intricate jewelry prototypes to massive architectural models, we provide the tools and expertise to bring your vision to life.</p>
+</div>
+<div class="row g-4">
+<div class="col-md-4">
+<div class="clay-card p-4 h-100 text-center pf-hover-lift border-0">
+<div class="mb-4 d-inline-flex align-items-center justify-content-center bg-white rounded-circle shadow-sm" style="width: 80px; height: 80px;">
+<i class="bi bi-palette fs-2 text-primary-pf"></i>
+</div>
+<h4 class="syne-font fw-bold mb-3">Vibrant Materials</h4>
+<p class="text-muted">Choose from hundreds of resins, PLAs, and custom filaments in every color imaginable to match your aesthetic.</p>
+</div>
+</div>
+<div class="col-md-4">
+<div class="clay-card p-4 h-100 text-center pf-hover-lift border-0">
+<div class="mb-4 d-inline-flex align-items-center justify-content-center bg-white rounded-circle shadow-sm" style="width: 80px; height: 80px;">
+<i class="bi bi-gem fs-2 text-primary-pf"></i>
+</div>
+<h4 class="syne-font fw-bold mb-3">Insane Detail</h4>
+<p class="text-muted">Our SLA and DLP printers achieve microscopic resolutions perfect for miniatures, fine art, and jewelry design.</p>
+</div>
+</div>
+<div class="col-md-4">
+<div class="clay-card p-4 h-100 text-center pf-hover-lift border-0">
+<div class="mb-4 d-inline-flex align-items-center justify-content-center bg-white rounded-circle shadow-sm" style="width: 80px; height: 80px;">
+<i class="bi bi-lightning-charge fs-2 text-primary-pf"></i>
+</div>
+<h4 class="syne-font fw-bold mb-3">Rapid Turnaround</h4>
+<p class="text-muted">Don't wait weeks for your prototypes. We offer expedited shipping and 24-hour printing for rush creative projects.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="py-5" style="background: linear-gradient(135deg, var(--pf-dark) 0%, #1a1528 100%); color: white;">
+<div class="container">
+<div class="row text-center g-4">
+<div class="col-md-3 col-6">
+<h2 class="display-4 fw-bold text-primary-pf mb-2">50k+</h2>
+<p class="text-white-50 mb-0">Models Printed</p>
+</div>
+<div class="col-md-3 col-6">
+<h2 class="display-4 fw-bold text-primary-pf mb-2">120+</h2>
+<p class="text-white-50 mb-0">Material Types</p>
+</div>
+<div class="col-md-3 col-6">
+<h2 class="display-4 fw-bold text-primary-pf mb-2">99%</h2>
+<p class="text-white-50 mb-0">Client Satisfaction</p>
+</div>
+<div class="col-md-3 col-6">
+<h2 class="display-4 fw-bold text-primary-pf mb-2">24h</h2>
+<p class="text-white-50 mb-0">Average Turnaround</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action -->
+<section class="py-6 mb-5 mt-5">
+<div class="container">
+<div class="clay-card p-5 text-center position-relative overflow-hidden" style="border: 1px solid rgba(123, 97, 255, 0.2);">
+<div class="position-absolute top-0 start-0 w-100 h-100" style="background: radial-gradient(circle at top right, rgba(123, 97, 255, 0.1), transparent 50%); z-index: 0;"></div>
+<div class="position-relative z-1">
+<h2 class="syne-font fw-bold display-5 mb-3">Ready to Create?</h2>
+<p class="text-muted fs-5 mb-4 w-75 mx-auto">Upload your STL or OBJ files today and get an instant quote on your next big creative project.</p>
+<a class="btn btn-lg btn-primary rounded-pill px-5 py-3 fw-bold shadow" href="/services2.html" style="background-color: var(--pf-primary); border-color: var(--pf-primary);">Start Your Project</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="pf-footer pt-5 pb-4 mt-5 clay-footer">
+<div class="container">
+<div class="row gy-5 mb-5">
+<div class="col-lg-4 col-md-6">
+<a class="navbar-brand d-flex align-items-center mb-3" href="/index.html">
+<div class="logo-icon me-2">
+<svg fill="none" height="30" viewbox="0 0 100 100" width="30" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 20H80V80H20V20Z" stroke="currentColor" stroke-width="8"></path>
+<path d="M35 35H65V65H35V35Z" stroke="currentColor" stroke-width="8"></path>
+<path d="M50 50L80 20" stroke="currentColor" stroke-width="8"></path>
+</svg>
+</div>
+<span class="syne-font fw-bold fs-4 pf-text-primary">ProtoForge</span>
+</a>
+<p class="text-muted mb-4 pe-lg-4">Making professional 3D manufacturing accessible to everyone. From digital ideas to physical reality.</p>
+<div class="d-flex gap-3 social-icons">
+<a class="clay-icon-btn" href="https://x.com/" rel="noopener noreferrer" target="_blank"><i class="bi bi-twitter-x"></i></a>
+<a class="clay-icon-btn" href="https://linkedin.com/" rel="noopener noreferrer" target="_blank"><i class="bi bi-linkedin"></i></a>
+<a class="clay-icon-btn" href="https://instagram.com/" rel="noopener noreferrer" target="_blank"><i class="bi bi-instagram"></i></a>
+<a class="clay-icon-btn" href="https://youtube.com/" rel="noopener noreferrer" target="_blank"><i class="bi bi-youtube"></i></a>
+</div>
+</div>
+<div class="col-lg-2 col-md-6 col-6">
+<h5 class="fw-bold mb-4 syne-font">Company</h5>
+<ul class="list-unstyled pf-footer-links">
+<li><a href="/about.html">About</a></li>
+<li><a href="/coming-soon.html">Careers</a></li>
+<li><a href="/blog.html">Blog</a></li>
+<li><a href="/contact.html">Contact</a></li>
+</ul>
+</div>
+<div class="col-lg-2 col-md-6 col-6">
+<h5 class="fw-bold mb-4 syne-font">Services</h5>
+<ul class="list-unstyled pf-footer-links">
+<li><a href="/services.html">Rapid Prototyping</a></li>
+<li><a href="/services.html">Custom Parts</a></li>
+<li><a href="/services.html">Industrial Printing</a></li>
+<li><a href="/services2.html">Creative Printing</a></li>
+</ul>
+</div>
+<div class="col-lg-2 col-md-6 col-6">
+<h5 class="fw-bold mb-4 syne-font">Resources</h5>
+<ul class="list-unstyled pf-footer-links">
+<li><a href="/materials.html">Materials</a></li>
+<li><a href="/pricing.html">Pricing</a></li>
+<li><a href="/how-it-works.html">How to Order</a></li>
+<li><a href="/faq.html">FAQ</a></li>
+</ul>
+</div>
+<div class="col-lg-2 col-md-6 col-6">
+<h5 class="fw-bold mb-4 syne-font">Account</h5>
+<ul class="list-unstyled pf-footer-links">
+<li><a href="/login.html">Login</a></li>
+<li><a href="/register.html">Register</a></li>
+<li><a href="/dashboard/client-dashboard.html">Dashboard</a></li>
+<li><a href="/dashboard/orders.html">Orders</a></li>
+</ul>
+</div>
+</div>
+<div class="row mb-5">
+<div class="col-lg-6 mx-auto text-center">
+<div class="clay-card p-4 pf-newsletter-card">
+<h4 class="syne-font fw-bold mb-2">Stay Ahead of the Next Dimension</h4>
+<p class="text-muted small mb-4">Get updates about 3D printing technology, materials, design trends, and ProtoForge innovations.</p>
+<form action="https://formsubmit.co/clament.iq@outlook.com" class="d-flex gap-2" method="POST">
+<input class="form-control pf-input" name="email" placeholder="Enter your email" required="" type="email"/>
+<input name="_next" type="hidden" value="/index.html"/>
+<button class="btn btn-primary pf-btn-primary px-4" type="submit">Subscribe</button>
+</form>
+</div>
+</div>
+</div>
+<div class="row pt-4 border-top border-secondary-subtle align-items-center">
+<div class="col-12 text-center">
+                <p class="text-muted small mb-0">&copy; 2026 ProtoForge Studio. All rights reserved.</p>
+            </div>
+</div>
+</div>
+</footer>
+<!-- GSAP & ScrollTrigger -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core Scripts -->
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/auth.js"></script>
+<script src="/assets/js/theme-rtl.js"></script>
+</body>
+</html>

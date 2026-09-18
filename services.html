@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html data-theme="light" dir="ltr">
+<head>
+<script>
+    (function () {
+        const theme = localStorage.getItem("protoforge_theme") || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        const direction = localStorage.getItem("protoforge_direction") || "ltr";
+        document.documentElement.setAttribute("data-theme", theme);
+        document.documentElement.setAttribute("dir", direction);
+    })();
+    </script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ProtoForge Studio | Industrial Services</title>
+<meta content="ProtoForge Studio delivers high-precision 3D printing, rapid prototyping, custom manufacturing, and professional design consultation for businesses and innovators." name="description"/>
+<meta content="3D Printing, Prototyping, Manufacturing, ProtoForge, Industrial 3D Printing, Creative Prototyping" name="keywords"/>
+<!-- Open Graph Tags -->
+<meta content="ProtoForge Studio" property="og:title"/>
+<meta content="Bring your boldest ideas to life in 3D with our premium printing and prototyping services." property="og:description"/>
+<meta content="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&amp;h=630&amp;fit=crop" property="og:image"/>
+<!-- Favicon -->
+<link href="data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20H80V80H20V20Z' stroke='%230066FF' stroke-width='8'/%3E%3Cpath d='M35 35H65V65H35V35Z' stroke='%2300E5FF' stroke-width='8'/%3E%3Cpath d='M50 50L80 20' stroke='%237B61FF' stroke-width='8'/%3E%3C/svg%3E" rel="icon" type="image/svg+xml"/>
+<link href="/assets/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<!-- Fonts: Inter for UI, Syne for Headings -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Syne:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+<!-- Custom CSS -->
+<link href="/assets/css/style.css" rel="stylesheet"/>
+<link href="/assets/css/dark-mode.css" rel="stylesheet"/>
+<link href="/assets/css/rtl.css" rel="stylesheet"/>
+<link href="/assets/css/animations.css" rel="stylesheet"/>
+</head>
+<body class="light-mode" data-bs-spy="scroll" data-bs-target="#navbar">
+<nav class="navbar navbar-expand-xl fixed-top pf-navbar clay-nav" id="navbar">
+<div class="container">
+<a class="navbar-brand d-flex align-items-center" href="/index.html">
+<div class="logo-icon me-2">
+<!-- SVG Logo placeholder -->
+<svg fill="none" height="40" viewbox="0 0 100 100" width="40" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 20H80V80H20V20Z" stroke="currentColor" stroke-width="8"></path>
+<path d="M35 35H65V65H35V35Z" stroke="currentColor" stroke-width="8"></path>
+<path d="M50 50L80 20" stroke="currentColor" stroke-width="8"></path>
+</svg>
+</div>
+<span class="syne-font fw-bold fs-4">ProtoForge</span>
+</a>
+<button aria-controls="pfNavbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler clay-btn" data-bs-target="#pfNavbar" data-bs-toggle="collapse" type="button">
+<i class="bi bi-list"></i>
+</button>
+<div class="collapse navbar-collapse" id="pfNavbar">
+<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+<li class="nav-item dropdown pf-dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">
+                        Home
+                    </a>
+<ul class="dropdown-menu clay-dropdown border-0 shadow-lg">
+<li><a class="dropdown-item" href="/index.html">Home 01: Industrial</a></li>
+<li><a class="dropdown-item" href="/home-creative.html">Home 02: Creative</a></li>
+</ul>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/about.html">About</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/services.html">Services</a>
+</li>
+                  <li class="nav-item dropdown pf-dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Pages
+                      </a>
+                      <ul class="dropdown-menu clay-dropdown border-0 shadow-lg">
+                          <li><a class="dropdown-item" href="/materials.html">Materials</a></li>
+                          <li><a class="dropdown-item" href="/how-it-works.html">How It Works</a></li>
+                          <li><a class="dropdown-item" href="/faq.html">FAQ</a></li>
+                          <li><a class="dropdown-item" href="/404.html">404 Error</a></li>
+                          <li><a class="dropdown-item" href="/coming-soon.html">Coming Soon</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link " href="/pricing.html">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+<a class="nav-link" href="/blog.html">Blog</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/contact.html">Contact</a>
+</li>
+</ul>
+<div class="d-flex align-items-center gap-3 auth-buttons-container">
+<!-- Populated by JS -->
+</div>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main>
+<section class="py-5 mt-5 text-center bg-light">
+<div class="container fade-up">
+<h1 class="display-4 fw-bold syne-font mb-3">Industrial Services</h1>
+<p class="lead text-muted max-w-2xl mx-auto">High-precision 3D printing and manufacturing solutions for engineering and industry.</p>
+</div>
+</section>
+<section class="py-5 stagger-cards">
+<div class="container">
+<div class="row g-4">
+<!-- Generate 9 cards -->
+<div class="col-lg-4 col-md-6">
+<div class="clay-card p-0 h-100 pf-hover-lift d-flex flex-column">
+<img alt="Rapid Prototyping" class="img-fluid border-bottom w-100" src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&amp;h=400&amp;fit=crop" style="height: 250px; object-fit: cover;"/>
+<div class="p-4 d-flex flex-column h-100">
+<h4 class="syne-font fw-bold mb-3">Rapid Prototyping</h4>
+<p class="text-muted mb-4">Accelerate product development.</p>
+<div class="mt-auto">
+<!-- Passing image via URL params or just directing to the same details page for demo -->
+<a class="btn pf-btn-secondary w-100 mt-auto" href="/service-details-1.html">Read More</a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6">
+<div class="clay-card p-0 h-100 pf-hover-lift d-flex flex-column">
+<img alt="Functional Prototypes" class="img-fluid border-bottom w-100" src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=600&amp;h=400&amp;fit=crop" style="height: 250px; object-fit: cover;"/>
+<div class="p-4 d-flex flex-column h-100">
+<h4 class="syne-font fw-bold mb-3">Functional Prototypes</h4>
+<p class="text-muted mb-4">Test fit and function with strong materials.</p>
+<div class="mt-auto">
+<!-- Passing image via URL params or just directing to the same details page for demo -->
+<a class="btn pf-btn-secondary w-100 mt-auto" href="/service-details-2.html">Read More</a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6">
+<div class="clay-card p-0 h-100 pf-hover-lift d-flex flex-column">
+<img alt="Custom Mechanical Parts" class="img-fluid border-bottom w-100" src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=600&amp;h=400&amp;fit=crop" style="height: 250px; object-fit: cover;"/>
+<div class="p-4 d-flex flex-column h-100">
+<h4 class="syne-font fw-bold mb-3">Custom Mechanical Parts</h4>
+<p class="text-muted mb-4">Low-volume end-use parts production.</p>
+<div class="mt-auto">
+<!-- Passing image via URL params or just directing to the same details page for demo -->
+<a class="btn pf-btn-secondary w-100 mt-auto" href="/service-details-3.html">Read More</a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6">
+<div class="clay-card p-0 h-100 pf-hover-lift d-flex flex-column">
+<img alt="Industrial Manufacturing" class="img-fluid border-bottom w-100" src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&amp;h=400&amp;fit=crop" style="height: 250px; object-fit: cover;"/>
+<div class="p-4 d-flex flex-column h-100">
+<h4 class="syne-font fw-bold mb-3">Industrial Manufacturing</h4>
+<p class="text-muted mb-4">Large scale 3D printing for factories.</p>
+<div class="mt-auto">
+<!-- Passing image via URL params or just directing to the same details page for demo -->
+<a class="btn pf-btn-secondary w-100 mt-auto" href="/service-details-4.html">Read More</a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6">
+<div class="clay-card p-0 h-100 pf-hover-lift d-flex flex-column">
+<img alt="Engineering Models" class="img-fluid border-bottom w-100" src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600&amp;h=400&amp;fit=crop" style="height: 250px; object-fit: cover;"/>
+<div class="p-4 d-flex flex-column h-100">
+<h4 class="syne-font fw-bold mb-3">Engineering Models</h4>
+<p class="text-muted mb-4">Detailed models for engineering analysis.</p>
+<div class="mt-auto">
+<!-- Passing image via URL params or just directing to the same details page for demo -->
+<a class="btn pf-btn-secondary w-100 mt-auto" href="/service-details-5.html">Read More</a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6">
+<div class="clay-card p-0 h-100 pf-hover-lift d-flex flex-column">
+<img alt="Automotive Prototyping" class="img-fluid border-bottom w-100" src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=600&amp;h=400&amp;fit=crop" style="height: 250px; object-fit: cover;"/>
+<div class="p-4 d-flex flex-column h-100">
+<h4 class="syne-font fw-bold mb-3">Automotive Prototyping</h4>
+<p class="text-muted mb-4">Custom parts for the automotive industry.</p>
+<div class="mt-auto">
+<!-- Passing image via URL params or just directing to the same details page for demo -->
+<a class="btn pf-btn-secondary w-100 mt-auto" href="/service-details-6.html">Read More</a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6">
+<div class="clay-card p-0 h-100 pf-hover-lift d-flex flex-column">
+<img alt="Architecture Models" class="img-fluid border-bottom w-100" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&amp;h=400&amp;fit=crop" style="height: 250px; object-fit: cover;"/>
+<div class="p-4 d-flex flex-column h-100">
+<h4 class="syne-font fw-bold mb-3">Architecture Models</h4>
+<p class="text-muted mb-4">Highly detailed architectural concepts.</p>
+<div class="mt-auto">
+<!-- Passing image via URL params or just directing to the same details page for demo -->
+<a class="btn pf-btn-secondary w-100 mt-auto" href="/service-details-7.html">Read More</a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6">
+<div class="clay-card p-0 h-100 pf-hover-lift d-flex flex-column">
+<img alt="Product Development" class="img-fluid border-bottom w-100" src="https://images.unsplash.com/photo-1581092335397-9583eb92d232?w=600&amp;h=400&amp;fit=crop" style="height: 250px; object-fit: cover;"/>
+<div class="p-4 d-flex flex-column h-100">
+<h4 class="syne-font fw-bold mb-3">Product Development</h4>
+<p class="text-muted mb-4">End-to-end product creation.</p>
+<div class="mt-auto">
+<!-- Passing image via URL params or just directing to the same details page for demo -->
+<a class="btn pf-btn-secondary w-100 mt-auto" href="/service-details-8.html">Read More</a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6">
+<div class="clay-card p-0 h-100 pf-hover-lift d-flex flex-column">
+<img alt="Design Consultation" class="img-fluid border-bottom w-100" src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=600&amp;h=400&amp;fit=crop" style="height: 250px; object-fit: cover;"/>
+<div class="p-4 d-flex flex-column h-100">
+<h4 class="syne-font fw-bold mb-3">Design Consultation</h4>
+<p class="text-muted mb-4">Expert advice to optimize your models.</p>
+<div class="mt-auto">
+<!-- Passing image via URL params or just directing to the same details page for demo -->
+<a class="btn pf-btn-secondary w-100 mt-auto" href="/service-details-9.html">Read More</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="pf-footer pt-5 pb-4 mt-5 clay-footer">
+<div class="container">
+<div class="row gy-5 mb-5">
+<div class="col-lg-4 col-md-6">
+<a class="navbar-brand d-flex align-items-center mb-3" href="/index.html">
+<div class="logo-icon me-2">
+<svg fill="none" height="30" viewbox="0 0 100 100" width="30" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 20H80V80H20V20Z" stroke="currentColor" stroke-width="8"></path>
+<path d="M35 35H65V65H35V35Z" stroke="currentColor" stroke-width="8"></path>
+<path d="M50 50L80 20" stroke="currentColor" stroke-width="8"></path>
+</svg>
+</div>
+<span class="syne-font fw-bold fs-4 pf-text-primary">ProtoForge</span>
+</a>
+<p class="text-muted mb-4 pe-lg-4">Making professional 3D manufacturing accessible to everyone. From digital ideas to physical reality.</p>
+<div class="d-flex gap-3 social-icons">
+<a class="clay-icon-btn" href="https://x.com/" rel="noopener noreferrer" target="_blank"><i class="bi bi-twitter-x"></i></a>
+<a class="clay-icon-btn" href="https://linkedin.com/" rel="noopener noreferrer" target="_blank"><i class="bi bi-linkedin"></i></a>
+<a class="clay-icon-btn" href="https://instagram.com/" rel="noopener noreferrer" target="_blank"><i class="bi bi-instagram"></i></a>
+<a class="clay-icon-btn" href="https://youtube.com/" rel="noopener noreferrer" target="_blank"><i class="bi bi-youtube"></i></a>
+</div>
+</div>
+<div class="col-lg-2 col-md-6 col-6">
+<h5 class="fw-bold mb-4 syne-font">Company</h5>
+<ul class="list-unstyled pf-footer-links">
+<li><a href="/about.html">About</a></li>
+<li><a href="/coming-soon.html">Careers</a></li>
+<li><a href="/blog.html">Blog</a></li>
+<li><a href="/contact.html">Contact</a></li>
+</ul>
+</div>
+<div class="col-lg-2 col-md-6 col-6">
+<h5 class="fw-bold mb-4 syne-font">Services</h5>
+<ul class="list-unstyled pf-footer-links">
+<li><a href="/services.html">Rapid Prototyping</a></li>
+<li><a href="/services.html">Custom Parts</a></li>
+<li><a href="/services.html">Industrial Printing</a></li>
+<li><a href="/services2.html">Creative Printing</a></li>
+</ul>
+</div>
+<div class="col-lg-2 col-md-6 col-6">
+<h5 class="fw-bold mb-4 syne-font">Resources</h5>
+<ul class="list-unstyled pf-footer-links">
+<li><a href="/materials.html">Materials</a></li>
+<li><a href="/pricing.html">Pricing</a></li>
+<li><a href="/how-it-works.html">How to Order</a></li>
+<li><a href="/faq.html">FAQ</a></li>
+</ul>
+</div>
+<div class="col-lg-2 col-md-6 col-6">
+<h5 class="fw-bold mb-4 syne-font">Account</h5>
+<ul class="list-unstyled pf-footer-links">
+<li><a href="/login.html">Login</a></li>
+<li><a href="/register.html">Register</a></li>
+<li><a href="/dashboard/client-dashboard.html">Dashboard</a></li>
+<li><a href="/dashboard/orders.html">Orders</a></li>
+</ul>
+</div>
+</div>
+<div class="row mb-5">
+<div class="col-lg-6 mx-auto text-center">
+<div class="clay-card p-4 pf-newsletter-card">
+<h4 class="syne-font fw-bold mb-2">Stay Ahead of the Next Dimension</h4>
+<p class="text-muted small mb-4">Get updates about 3D printing technology, materials, design trends, and ProtoForge innovations.</p>
+<form action="https://formsubmit.co/clament.iq@outlook.com" class="d-flex gap-2" method="POST">
+<input class="form-control pf-input" name="email" placeholder="Enter your email" required="" type="email"/>
+<input name="_next" type="hidden" value="/index.html"/>
+<button class="btn btn-primary pf-btn-primary px-4" type="submit">Subscribe</button>
+</form>
+</div>
+</div>
+</div>
+<div class="row pt-4 border-top border-secondary-subtle align-items-center">
+<div class="col-12 text-center">
+                <p class="text-muted small mb-0">&copy; 2026 ProtoForge Studio. All rights reserved.</p>
+            </div>
+</div>
+</div>
+</footer>
+<!-- GSAP & ScrollTrigger -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core Scripts -->
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/auth.js"></script>
+<script src="/assets/js/theme-rtl.js"></script>
+</body>
+</html>

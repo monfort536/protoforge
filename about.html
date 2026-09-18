@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html data-theme="light" dir="ltr">
+<head>
+    <script>
+    (function () {
+        const theme = localStorage.getItem("protoforge_theme") || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        const direction = localStorage.getItem("protoforge_direction") || "ltr";
+        document.documentElement.setAttribute("data-theme", theme);
+        document.documentElement.setAttribute("dir", direction);
+    })();
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProtoForge Studio | About Us</title>
+    <meta name="description" content="ProtoForge Studio delivers high-precision 3D printing, rapid prototyping, custom manufacturing, and professional design consultation for businesses and innovators.">
+    <meta name="keywords" content="3D Printing, Prototyping, Manufacturing, ProtoForge, Industrial 3D Printing, Creative Prototyping">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="ProtoForge Studio">
+    <meta property="og:description" content="Bring your boldest ideas to life in 3D with our premium printing and prototyping services.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&h=630&fit=crop">
+    
+    <!-- Favicon -->
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20H80V80H20V20Z' stroke='%230066FF' stroke-width='8'/%3E%3Cpath d='M35 35H65V65H35V35Z' stroke='%2300E5FF' stroke-width='8'/%3E%3Cpath d='M50 50L80 20' stroke='%237B61FF' stroke-width='8'/%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+
+    <!-- Fonts: Inter for UI, Syne for Headings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/dark-mode.css">
+    <link rel="stylesheet" href="/assets/css/rtl.css">
+    <link rel="stylesheet" href="/assets/css/animations.css">
+    
+    
+</head>
+<body class="light-mode" data-bs-spy="scroll" data-bs-target="#navbar">
+    
+    <nav id="navbar" class="navbar navbar-expand-xl fixed-top pf-navbar clay-nav">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="/index.html">
+            <div class="logo-icon me-2">
+                <!-- SVG Logo placeholder -->
+                <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 20H80V80H20V20Z" stroke="currentColor" stroke-width="8"/>
+                    <path d="M35 35H65V65H35V35Z" stroke="currentColor" stroke-width="8"/>
+                    <path d="M50 50L80 20" stroke="currentColor" stroke-width="8"/>
+                </svg>
+            </div>
+            <span class="syne-font fw-bold fs-4">ProtoForge</span>
+        </a>
+        <button class="navbar-toggler clay-btn" type="button" data-bs-toggle="collapse" data-bs-target="#pfNavbar" aria-controls="pfNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="pfNavbar">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown pf-dropdown">
+                    <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Home
+                    </a>
+                    <ul class="dropdown-menu clay-dropdown border-0 shadow-lg">
+                        <li><a class="dropdown-item" href="/index.html">Home 01: Industrial</a></li>
+                        <li><a class="dropdown-item" href="/home-creative.html">Home 02: Creative</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="/about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="/services.html">Services</a>
+                </li>
+                  <li class="nav-item dropdown pf-dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Pages
+                      </a>
+                      <ul class="dropdown-menu clay-dropdown border-0 shadow-lg">
+                          <li><a class="dropdown-item" href="/materials.html">Materials</a></li>
+                          <li><a class="dropdown-item" href="/how-it-works.html">How It Works</a></li>
+                          <li><a class="dropdown-item" href="/faq.html">FAQ</a></li>
+                          <li><a class="dropdown-item" href="/404.html">404 Error</a></li>
+                          <li><a class="dropdown-item" href="/coming-soon.html">Coming Soon</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link " href="/pricing.html">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="/blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="/contact.html">Contact</a>
+                </li>
+            </ul>
+            <div class="d-flex align-items-center gap-3 auth-buttons-container">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <!-- Main Content -->
+    <main>
+        
+<!-- About Hero -->
+<section class="py-6 mt-5 bg-light overflow-hidden">
+    <div class="container fade-up relative">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <h1 class="display-4 fw-bold syne-font mb-4">About ProtoForge Studio</h1>
+                <p class="lead text-muted mb-4">We are an advanced manufacturing platform dedicated to turning digital concepts into physical realities with uncompromising precision.</p>
+                <div class="row g-4 mt-2">
+                    <div class="col-6">
+                        <h2 class="fw-bold text-primary-pf mb-1">100K+</h2>
+                        <p class="text-muted small">Parts Manufactured</p>
+                    </div>
+                    <div class="col-6">
+                        <h2 class="fw-bold text-primary-pf mb-1">99.8%</h2>
+                        <p class="text-muted small">Quality Success Rate</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="position-relative">
+                    <img src="/assets/images/about/facility.jpg" class="img-fluid rounded-4 shadow-lg position-relative z-1" alt="Our Facility">
+                    <div class="position-absolute top-0 end-0 bg-primary w-100 h-100 rounded-4 ms-4 mt-4 opacity-10" style="z-index: 0;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mission & Vision -->
+<section class="py-6">
+    <div class="container fade-up">
+        <div class="row g-5">
+            <div class="col-md-6">
+                <div class="clay-card p-5 h-100 border-start border-4 border-primary">
+                    <div class="text-primary-pf fs-1 mb-4"><i class="bi bi-rocket-takeoff"></i></div>
+                    <h3 class="syne-font fw-bold mb-3">Our Mission</h3>
+                    <p class="text-muted fs-5">Making professional 3D manufacturing accessible to everyone, from independent creators to large-scale industrial engineers.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="clay-card p-5 h-100 border-start border-4 border-creative" style="border-color: var(--pf-purple) !important;">
+                    <div class="text-creative-pf fs-1 mb-4" style="background: var(--gradient-creative); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"><i class="bi bi-eye"></i></div>
+                    <h3 class="syne-font fw-bold mb-3">Our Vision</h3>
+                    <p class="text-muted fs-5">To build the future where digital creativity seamlessly becomes physical reality without the friction of traditional manufacturing.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Our Story Timeline -->
+<section class="py-6 bg-light">
+    <div class="container fade-up">
+        <h2 class="display-5 fw-bold syne-font text-center mb-5">Our Journey</h2>
+        
+        <div class="position-relative w-100 max-w-4xl mx-auto">
+            <!-- Line -->
+            <div class="position-absolute top-0 bottom-0 start-50 translate-middle-x border-start border-2 border-primary border-opacity-25 d-none d-md-block"></div>
+            
+            <div class="row g-4 mb-4">
+                <div class="col-md-6 text-md-end pe-md-5">
+                    <h4 class="fw-bold text-primary-pf">2015</h4>
+                    <h5 class="fw-bold">Company Founded</h5>
+                    <p class="text-muted small">Started as a small desktop 3D printing service in a garage.</p>
+                </div>
+                <div class="col-md-6 d-none d-md-block position-relative">
+                    <div class="position-absolute top-0 start-0 translate-middle rounded-circle bg-primary text-white d-flex align-items-center justify-content-center" style="width: 24px; height: 24px; left: -1px !important;"></div>
+                </div>
+            </div>
+
+            <div class="row g-4 mb-4">
+                <div class="col-md-6 d-none d-md-block position-relative">
+                    <div class="position-absolute top-0 end-0 translate-middle rounded-circle bg-primary text-white d-flex align-items-center justify-content-center" style="width: 24px; height: 24px; right: -25px !important;"></div>
+                </div>
+                <div class="col-md-6 ps-md-5">
+                    <h4 class="fw-bold text-primary-pf">2017</h4>
+                    <h5 class="fw-bold">First Industrial Lab</h5>
+                    <p class="text-muted small">Acquired our first fleet of industrial SLS and SLA printers.</p>
+                </div>
+            </div>
+
+            <div class="row g-4 mb-4">
+                <div class="col-md-6 text-md-end pe-md-5">
+                    <h4 class="fw-bold text-primary-pf">2019</h4>
+                    <h5 class="fw-bold">Expanded Materials</h5>
+                    <p class="text-muted small">Introduced carbon-fiber composites and metal composite printing.</p>
+                </div>
+                <div class="col-md-6 d-none d-md-block position-relative">
+                    <div class="position-absolute top-0 start-0 translate-middle rounded-circle bg-primary text-white d-flex align-items-center justify-content-center" style="width: 24px; height: 24px; left: -1px !important;"></div>
+                </div>
+            </div>
+
+            <div class="row g-4 mb-4">
+                <div class="col-md-6 d-none d-md-block position-relative">
+                    <div class="position-absolute top-0 end-0 translate-middle rounded-circle bg-primary text-white d-flex align-items-center justify-content-center" style="width: 24px; height: 24px; right: -25px !important;"></div>
+                </div>
+                <div class="col-md-6 ps-md-5">
+                    <h4 class="fw-bold text-primary-pf">2022</h4>
+                    <h5 class="fw-bold">Advanced Automation</h5>
+                    <p class="text-muted small">Launched our automated quoting and printability analysis software.</p>
+                </div>
+            </div>
+            
+            <div class="row g-4 mb-4">
+                <div class="col-md-6 text-md-end pe-md-5">
+                    <h4 class="fw-bold text-primary-pf">2024</h4>
+                    <h5 class="fw-bold">Creative Studio Launch</h5>
+                    <p class="text-muted small">Opened a dedicated division for artists, creators, and hobbyists.</p>
+                </div>
+                <div class="col-md-6 d-none d-md-block position-relative">
+                    <div class="position-absolute top-0 start-0 translate-middle rounded-circle bg-primary text-white d-flex align-items-center justify-content-center" style="width: 24px; height: 24px; left: -1px !important;"></div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 d-none d-md-block position-relative">
+                    <div class="position-absolute top-0 end-0 translate-middle rounded-circle bg-primary text-white d-flex align-items-center justify-content-center" style="width: 24px; height: 24px; right: -25px !important;"><i class="bi bi-star-fill text-warning small"></i></div>
+                </div>
+                <div class="col-md-6 ps-md-5">
+                    <h4 class="fw-bold text-primary-pf">2026</h4>
+                    <h5 class="fw-bold">Global Innovation Platform</h5>
+                    <p class="text-muted small">Connecting designers with local print farms globally.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team -->
+<section class="py-6 stagger-cards">
+    <div class="container text-center">
+        <h2 class="display-5 fw-bold syne-font mb-5">Meet the Experts</h2>
+        <div class="row g-4 justify-content-center">
+            
+            
+            
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="clay-card p-4 pf-hover-lift h-100">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop" class="rounded-circle mb-3 object-fit-cover shadow" style="width: 150px; height: 150px;" alt="Marcus Thorne">
+                    <h5 class="fw-bold mb-1">Marcus Thorne</h5>
+                    <p class="text-primary-pf small fw-bold mb-3">Founder & CEO</p>
+                    <div class="d-flex justify-content-center gap-2">
+                        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="text-muted"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://x.com/" target="_blank" rel="noopener noreferrer" class="text-muted"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="clay-card p-4 pf-hover-lift h-100">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop" class="rounded-circle mb-3 object-fit-cover shadow" style="width: 150px; height: 150px;" alt="Dr. Sarah Chen">
+                    <h5 class="fw-bold mb-1">Dr. Sarah Chen</h5>
+                    <p class="text-primary-pf small fw-bold mb-3">Lead Engineer</p>
+                    <div class="d-flex justify-content-center gap-2">
+                        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="text-muted"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://x.com/" target="_blank" rel="noopener noreferrer" class="text-muted"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="clay-card p-4 pf-hover-lift h-100">
+                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop" class="rounded-circle mb-3 object-fit-cover shadow" style="width: 150px; height: 150px;" alt="Leo Martinez">
+                    <h5 class="fw-bold mb-1">Leo Martinez</h5>
+                    <p class="text-primary-pf small fw-bold mb-3">3D Designer</p>
+                    <div class="d-flex justify-content-center gap-2">
+                        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="text-muted"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://x.com/" target="_blank" rel="noopener noreferrer" class="text-muted"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="clay-card p-4 pf-hover-lift h-100">
+                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop" class="rounded-circle mb-3 object-fit-cover shadow" style="width: 150px; height: 150px;" alt="Elena Rodriguez">
+                    <h5 class="fw-bold mb-1">Elena Rodriguez</h5>
+                    <p class="text-primary-pf small fw-bold mb-3">Materials Specialist</p>
+                    <div class="d-flex justify-content-center gap-2">
+                        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="text-muted"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://x.com/" target="_blank" rel="noopener noreferrer" class="text-muted"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="clay-card p-4 pf-hover-lift h-100">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" class="rounded-circle mb-3 object-fit-cover shadow" style="width: 150px; height: 150px;" alt="James Wilson">
+                    <h5 class="fw-bold mb-1">James Wilson</h5>
+                    <p class="text-primary-pf small fw-bold mb-3">Production Manager</p>
+                    <div class="d-flex justify-content-center gap-2">
+                        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="text-muted"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://x.com/" target="_blank" rel="noopener noreferrer" class="text-muted"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="clay-card p-4 pf-hover-lift h-100">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop" class="rounded-circle mb-3 object-fit-cover shadow" style="width: 150px; height: 150px;" alt="Mia Wallace">
+                    <h5 class="fw-bold mb-1">Mia Wallace</h5>
+                    <p class="text-primary-pf small fw-bold mb-3">Customer Success</p>
+                    <div class="d-flex justify-content-center gap-2">
+                        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="text-muted"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://x.com/" target="_blank" rel="noopener noreferrer" class="text-muted"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="py-6 bg-primary text-white">
+    <div class="container fade-up">
+        <h2 class="display-5 fw-bold syne-font text-center mb-5">What Our Clients Say</h2>
+        
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 text-center">
+                            <div class="text-warning mb-3 fs-4">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="fs-4 fst-italic mb-4">"ProtoForge has completely transformed our R&D workflow. The accuracy of their PA-CF prints allowed us to test functional drone frames in real-world conditions within 48 hours of finalizing the CAD."</p>
+                            <img src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?w=100&h=100&fit=crop" class="rounded-circle mb-2 border border-2 border-white" style="width: 60px; height: 60px; object-fit: cover;" alt="Client">
+                            <h6 class="fw-bold mb-0">David K.</h6>
+                            <small class="opacity-75">Aerospace Engineer, AERO-CORP</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 text-center">
+                            <div class="text-warning mb-3 fs-4">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="fs-4 fst-italic mb-4">"As a creative agency, we often need physical props for shoots. The level of detail from their high-res resin printers is unmatched. It looks exactly like the render."</p>
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop" class="rounded-circle mb-2 border border-2 border-white" style="width: 60px; height: 60px; object-fit: cover;" alt="Client">
+                            <h6 class="fw-bold mb-0">Jessica M.</h6>
+                            <small class="opacity-75">Art Director, Studio Nine</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="pf-footer pt-5 pb-4 mt-5 clay-footer">
+    <div class="container">
+        <div class="row gy-5 mb-5">
+            <div class="col-lg-4 col-md-6">
+                <a class="navbar-brand d-flex align-items-center mb-3" href="/index.html">
+                    <div class="logo-icon me-2">
+                        <svg width="30" height="30" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 20H80V80H20V20Z" stroke="currentColor" stroke-width="8"/>
+                            <path d="M35 35H65V65H35V35Z" stroke="currentColor" stroke-width="8"/>
+                            <path d="M50 50L80 20" stroke="currentColor" stroke-width="8"/>
+                        </svg>
+                    </div>
+                    <span class="syne-font fw-bold fs-4 pf-text-primary">ProtoForge</span>
+                </a>
+                <p class="text-muted mb-4 pe-lg-4">Making professional 3D manufacturing accessible to everyone. From digital ideas to physical reality.</p>
+                <div class="d-flex gap-3 social-icons">
+                    <a href="https://x.com/" target="_blank" rel="noopener noreferrer" class="clay-icon-btn"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="clay-icon-btn"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="clay-icon-btn"><i class="bi bi-instagram"></i></a>
+                    <a href="https://youtube.com/" target="_blank" rel="noopener noreferrer" class="clay-icon-btn"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-6">
+                <h5 class="fw-bold mb-4 syne-font">Company</h5>
+                <ul class="list-unstyled pf-footer-links">
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/coming-soon.html">Careers</a></li>
+                    <li><a href="/blog.html">Blog</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 col-6">
+                <h5 class="fw-bold mb-4 syne-font">Services</h5>
+                <ul class="list-unstyled pf-footer-links">
+                    <li><a href="/services.html">Rapid Prototyping</a></li>
+                    <li><a href="/services.html">Custom Parts</a></li>
+                    <li><a href="/services.html">Industrial Printing</a></li>
+                    <li><a href="/services2.html">Creative Printing</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 col-6">
+                <h5 class="fw-bold mb-4 syne-font">Resources</h5>
+                <ul class="list-unstyled pf-footer-links">
+                    <li><a href="/materials.html">Materials</a></li>
+                    <li><a href="/pricing.html">Pricing</a></li>
+                    <li><a href="/how-it-works.html">How to Order</a></li>
+                    <li><a href="/faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 col-6">
+                <h5 class="fw-bold mb-4 syne-font">Account</h5>
+                <ul class="list-unstyled pf-footer-links">
+                    <li><a href="/login.html">Login</a></li>
+                    <li><a href="/register.html">Register</a></li>
+                    <li><a href="/dashboard/client-dashboard.html">Dashboard</a></li>
+                    <li><a href="/dashboard/orders.html">Orders</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="row mb-5">
+            <div class="col-lg-6 mx-auto text-center">
+                <div class="clay-card p-4 pf-newsletter-card">
+                    <h4 class="syne-font fw-bold mb-2">Stay Ahead of the Next Dimension</h4>
+                    <p class="text-muted small mb-4">Get updates about 3D printing technology, materials, design trends, and ProtoForge innovations.</p>
+                    <form action="https://formsubmit.co/clament.iq@outlook.com" method="POST" class="d-flex gap-2">
+                        <input type="email" name="email" class="form-control pf-input" placeholder="Enter your email" required>
+                        <input type="hidden" name="_next" value="/index.html">
+                        <button type="submit" class="btn btn-primary pf-btn-primary px-4">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="row pt-4 border-top border-secondary-subtle align-items-center">
+            <div class="col-12 text-center">
+                <p class="text-muted small mb-0">&copy; 2026 ProtoForge Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core Scripts -->
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/auth.js"></script>
+
+    
+    <script src="/assets/js/theme-rtl.js"></script>
+</body>
+</html>

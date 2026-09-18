@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+
+<html data-theme="light" dir="ltr">
+<head>
+<script>
+    (function () {
+        const theme = localStorage.getItem("protoforge_theme") || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        const direction = localStorage.getItem("protoforge_direction") || "ltr";
+        document.documentElement.setAttribute("data-theme", theme);
+        document.documentElement.setAttribute("dir", direction);
+    })();
+    </script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ProtoForge Studio | Functional Prototypes</title>
+<meta content="ProtoForge Studio delivers high-precision 3D printing, rapid prototyping, custom manufacturing, and professional design consultation for businesses and innovators." name="description"/>
+<meta content="3D Printing, Prototyping, Manufacturing, ProtoForge, Industrial 3D Printing, Creative Prototyping" name="keywords"/>
+<!-- Open Graph Tags -->
+<meta content="ProtoForge Studio" property="og:title"/>
+<meta content="Bring your boldest ideas to life in 3D with our premium printing and prototyping services." property="og:description"/>
+<meta content="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&amp;h=630&amp;fit=crop" property="og:image"/>
+<!-- Favicon -->
+<link href="data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20H80V80H20V20Z' stroke='%230066FF' stroke-width='8'/%3E%3Cpath d='M35 35H65V65H35V35Z' stroke='%2300E5FF' stroke-width='8'/%3E%3Cpath d='M50 50L80 20' stroke='%237B61FF' stroke-width='8'/%3E%3C/svg%3E" rel="icon" type="image/svg+xml"/>
+<link href="/assets/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<!-- Fonts: Inter for UI, Syne for Headings -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Syne:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+<!-- Custom CSS -->
+<link href="/assets/css/style.css" rel="stylesheet"/>
+<link href="/assets/css/dark-mode.css" rel="stylesheet"/>
+<link href="/assets/css/rtl.css" rel="stylesheet"/>
+<link href="/assets/css/animations.css" rel="stylesheet"/>
+</head>
+<body class="light-mode" data-bs-spy="scroll" data-bs-target="#navbar">
+<nav class="navbar navbar-expand-xl fixed-top pf-navbar clay-nav" id="navbar">
+<div class="container">
+<a class="navbar-brand d-flex align-items-center" href="/index.html">
+<div class="logo-icon me-2">
+<!-- SVG Logo placeholder -->
+<svg fill="none" height="40" viewbox="0 0 100 100" width="40" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 20H80V80H20V20Z" stroke="currentColor" stroke-width="8"></path>
+<path d="M35 35H65V65H35V35Z" stroke="currentColor" stroke-width="8"></path>
+<path d="M50 50L80 20" stroke="currentColor" stroke-width="8"></path>
+</svg>
+</div>
+<span class="syne-font fw-bold fs-4">ProtoForge</span>
+</a>
+<button aria-controls="pfNavbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler clay-btn" data-bs-target="#pfNavbar" data-bs-toggle="collapse" type="button">
+<i class="bi bi-list"></i>
+</button>
+<div class="collapse navbar-collapse" id="pfNavbar">
+<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+<li class="nav-item dropdown pf-dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">
+                        Home
+                    </a>
+<ul class="dropdown-menu clay-dropdown border-0 shadow-lg">
+<li><a class="dropdown-item" href="/index.html">Home 01: Industrial</a></li>
+<li><a class="dropdown-item" href="/home-creative.html">Home 02: Creative</a></li>
+</ul>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/about.html">About</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/services.html">Services</a>
+</li>
+                  <li class="nav-item dropdown pf-dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Pages
+                      </a>
+                      <ul class="dropdown-menu clay-dropdown border-0 shadow-lg">
+                          <li><a class="dropdown-item" href="/materials.html">Materials</a></li>
+                          <li><a class="dropdown-item" href="/how-it-works.html">How It Works</a></li>
+                          <li><a class="dropdown-item" href="/faq.html">FAQ</a></li>
+                          <li><a class="dropdown-item" href="/404.html">404 Error</a></li>
+                          <li><a class="dropdown-item" href="/coming-soon.html">Coming Soon</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link " href="/pricing.html">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+<a class="nav-link" href="/blog.html">Blog</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/contact.html">Contact</a>
+</li>
+</ul>
+<div class="d-flex align-items-center gap-3 auth-buttons-container">
+<!-- Populated by JS -->
+</div>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main>
+<!-- Dynamically handled by JS to match image, but for static template we provide a solid default that gets replaced on load -->
+<section class="py-5 mt-5">
+<div class="container fade-up">
+<div class="row align-items-center mb-5">
+<div class="col-lg-6 mb-4 mb-lg-0">
+<img alt="Functional Prototypes" class="img-fluid clay-card p-2 w-100" id="serviceHeroImg" src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=1200&amp;h=400&amp;fit=crop" style="height: 400px; object-fit: cover;"/>
+</div>
+<div class="col-lg-6 ps-lg-5">
+<h1 class="display-4 fw-bold syne-font mb-4" id="serviceTitle">Functional Prototypes</h1>
+<p class="lead text-muted mb-4" id="serviceIntro">Test fit and function with strong materials.</p>
+<div class="d-flex gap-3">
+<a class="btn pf-btn-primary" href="/upload-design.html">Start Your Project</a>
+<a class="btn pf-btn-secondary" href="/contact.html">Request a Quote</a>
+</div>
+</div>
+</div>
+<div class="row g-5 mt-4">
+<div class="col-lg-8">
+<!-- Overview -->
+<h3 class="syne-font fw-bold mb-4">Overview</h3>
+<p class="text-muted mb-5">Our rapid prototyping service leverages state-of-the-art additive manufacturing technologies to turn your CAD files into physical models in hours, not weeks. We understand that in modern product development, speed to market is critical. By utilizing our service, your engineering and design teams can validate concepts and resolve functional issues early in the design cycle.</p>
+<!-- What We Provide -->
+<h3 class="syne-font fw-bold mb-4">What We Provide</h3>
+<div class="row g-4 mb-5">
+<div class="col-md-6">
+<ul class="list-unstyled text-muted">
+<li class="mb-3"><i class="bi bi-check-circle-fill text-primary-pf me-2"></i> ±0.05mm Dimensional Accuracy</li>
+<li class="mb-3"><i class="bi bi-check-circle-fill text-primary-pf me-2"></i> Same-Day Dispatch Available</li>
+<li class="mb-3"><i class="bi bi-check-circle-fill text-primary-pf me-2"></i> Engineering-Grade Materials</li>
+</ul>
+</div>
+<div class="col-md-6">
+<ul class="list-unstyled text-muted">
+<li class="mb-3"><i class="bi bi-check-circle-fill text-primary-pf me-2"></i> Design for Additive Manufacturing Support</li>
+<li class="mb-3"><i class="bi bi-check-circle-fill text-primary-pf me-2"></i> Post-Processing &amp; Finishing</li>
+<li class="mb-3"><i class="bi bi-check-circle-fill text-primary-pf me-2"></i> Strict NDA Confidentiality</li>
+</ul>
+</div>
+</div>
+<!-- Process -->
+<h3 class="syne-font fw-bold mb-4">Our Process</h3>
+<div class="timeline text-muted mb-5">
+<div class="d-flex mb-4">
+<div class="me-4 text-center">
+<div class="rounded-circle bg-primary bg-opacity-10 text-primary-pf d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">1</div>
+</div>
+<div>
+<h5 class="fw-bold text-dark">Upload</h5>
+<p class="small">Upload your CAD files securely via our platform.</p>
+</div>
+</div>
+<div class="d-flex mb-4">
+<div class="me-4 text-center">
+<div class="rounded-circle bg-primary bg-opacity-10 text-primary-pf d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">2</div>
+</div>
+<div>
+<h5 class="fw-bold text-dark">Review</h5>
+<p class="small">Automated printability analysis and manual expert review.</p>
+</div>
+</div>
+<div class="d-flex mb-4">
+<div class="me-4 text-center">
+<div class="rounded-circle bg-primary bg-opacity-10 text-primary-pf d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">3</div>
+</div>
+<div>
+<h5 class="fw-bold text-dark">Material Selection</h5>
+<p class="small">Choose the optimal material for your specific use case.</p>
+</div>
+</div>
+<div class="d-flex mb-4">
+<div class="me-4 text-center">
+<div class="rounded-circle bg-primary bg-opacity-10 text-primary-pf d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">4</div>
+</div>
+<div>
+<h5 class="fw-bold text-dark">Printing</h5>
+<p class="small">Production begins on our industrial printer farm.</p>
+</div>
+</div>
+<div class="d-flex mb-4">
+<div class="me-4 text-center">
+<div class="rounded-circle bg-primary bg-opacity-10 text-primary-pf d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">5</div>
+</div>
+<div>
+<h5 class="fw-bold text-dark">Quality Check</h5>
+<p class="small">Rigorous inspection to ensure dimensional accuracy.</p>
+</div>
+</div>
+<div class="d-flex">
+<div class="me-4 text-center">
+<div class="rounded-circle bg-primary bg-opacity-10 text-primary-pf d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">6</div>
+</div>
+<div>
+<h5 class="fw-bold text-dark">Delivery</h5>
+<p class="small">Careful packaging and express shipping to your door.</p>
+</div>
+</div>
+</div>
+<!-- FAQ -->
+<h3 class="syne-font fw-bold mb-4">Frequently Asked Questions</h3>
+<div class="accordion mb-5" id="serviceFaq">
+<div class="accordion-item bg-transparent border-bottom border-top-0 border-start-0 border-end-0 border-secondary-subtle">
+<h2 class="accordion-header">
+<button class="accordion-button collapsed bg-transparent text-dark fw-bold shadow-none" data-bs-target="#faq1" data-bs-toggle="collapse" type="button">
+                                What is the typical turnaround time?
+                            </button>
+</h2>
+<div class="accordion-collapse collapse" data-bs-parent="#serviceFaq" id="faq1">
+<div class="accordion-body text-muted small">
+                                Depending on the complexity and volume, standard turnaround is 2-4 business days. Expedited next-day options are available for urgent requests.
+                            </div>
+</div>
+</div>
+<div class="accordion-item bg-transparent border-bottom border-top-0 border-start-0 border-end-0 border-secondary-subtle">
+<h2 class="accordion-header">
+<button class="accordion-button collapsed bg-transparent text-dark fw-bold shadow-none" data-bs-target="#faq2" data-bs-toggle="collapse" type="button">
+                                What file formats do you accept?
+                            </button>
+</h2>
+<div class="accordion-collapse collapse" data-bs-parent="#serviceFaq" id="faq2">
+<div class="accordion-body text-muted small">
+                                We prefer STL, STEP, and OBJ formats. We can also work with native files from major CAD software like SolidWorks, Fusion 360, and Inventor.
+                            </div>
+</div>
+</div>
+<div class="accordion-item bg-transparent border-bottom border-top-0 border-start-0 border-end-0 border-secondary-subtle">
+<h2 class="accordion-header">
+<button class="accordion-button collapsed bg-transparent text-dark fw-bold shadow-none" data-bs-target="#faq3" data-bs-toggle="collapse" type="button">
+                                What are the maximum print dimensions?
+                            </button>
+</h2>
+<div class="accordion-collapse collapse" data-bs-parent="#serviceFaq" id="faq3">
+<div class="accordion-body text-muted small">
+                                Our large-format industrial printers can accommodate single parts up to 600mm x 600mm x 600mm. Larger parts can be sectioned and assembled.
+                            </div>
+</div>
+</div>
+<div class="accordion-item bg-transparent border-bottom border-top-0 border-start-0 border-end-0 border-secondary-subtle">
+<h2 class="accordion-header">
+<button class="accordion-button collapsed bg-transparent text-dark fw-bold shadow-none" data-bs-target="#faq4" data-bs-toggle="collapse" type="button">
+                                Are the parts functional?
+                            </button>
+</h2>
+<div class="accordion-collapse collapse" data-bs-parent="#serviceFaq" id="faq4">
+<div class="accordion-body text-muted small">
+                                Yes. Depending on the material selected (e.g., Nylon, PC, Carbon Fiber composites), parts can withstand significant mechanical stress and high temperatures.
+                            </div>
+</div>
+</div>
+<div class="accordion-item bg-transparent border-bottom border-top-0 border-start-0 border-end-0 border-secondary-subtle">
+<h2 class="accordion-header">
+<button class="accordion-button collapsed bg-transparent text-dark fw-bold shadow-none" data-bs-target="#faq5" data-bs-toggle="collapse" type="button">
+                                Do you sign NDAs?
+                            </button>
+</h2>
+<div class="accordion-collapse collapse" data-bs-parent="#serviceFaq" id="faq5">
+<div class="accordion-body text-muted small">
+                                Absolutely. We understand the importance of IP protection and have a standard mutual NDA ready, or we can sign yours.
+                            </div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="clay-card p-4 position-sticky" style="top: 100px;">
+<h4 class="fw-bold syne-font mb-4">Service Details</h4>
+<div class="mb-4">
+<h6 class="fw-bold text-dark mb-2">Benefits</h6>
+<ul class="list-unstyled text-muted small">
+<li class="mb-2"><i class="bi bi-chevron-right text-primary-pf me-2"></i> Fast turnaround</li>
+<li class="mb-2"><i class="bi bi-chevron-right text-primary-pf me-2"></i> High precision</li>
+<li class="mb-2"><i class="bi bi-chevron-right text-primary-pf me-2"></i> Professional quality</li>
+<li class="mb-2"><i class="bi bi-chevron-right text-primary-pf me-2"></i> Material flexibility</li>
+<li class="mb-2"><i class="bi bi-chevron-right text-primary-pf me-2"></i> Expert support</li>
+</ul>
+</div>
+<div class="mb-4">
+<h6 class="fw-bold text-dark mb-2">Pricing Structure</h6>
+<p class="text-muted small mb-0">Pricing is calculated based on material volume, print time, and selected finish. Minimum order value is $25.00.</p>
+</div>
+<hr class="my-4 border-secondary-subtle"/>
+<h5 class="fw-bold mb-3 text-center">Ready to begin?</h5>
+<a class="btn pf-btn-primary w-100 mb-2" href="/upload-design.html">Get Instant Quote</a>
+<a class="btn pf-btn-secondary w-100 mt-auto" href="/contact.html">Talk to an Expert</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="pf-footer pt-5 pb-4 mt-5 clay-footer">
+<div class="container">
+<div class="row gy-5 mb-5">
+<div class="col-lg-4 col-md-6">
+<a class="navbar-brand d-flex align-items-center mb-3" href="/index.html">
+<div class="logo-icon me-2">
+<svg fill="none" height="30" viewbox="0 0 100 100" width="30" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 20H80V80H20V20Z" stroke="currentColor" stroke-width="8"></path>
+<path d="M35 35H65V65H35V35Z" stroke="currentColor" stroke-width="8"></path>
+<path d="M50 50L80 20" stroke="currentColor" stroke-width="8"></path>
+</svg>
+</div>
+<span class="syne-font fw-bold fs-4 pf-text-primary">ProtoForge</span>
+</a>
+<p class="text-muted mb-4 pe-lg-4">Making professional 3D manufacturing accessible to everyone. From digital ideas to physical reality.</p>
+<div class="d-flex gap-3 social-icons">
+<a class="clay-icon-btn" href="https://x.com/" rel="noopener noreferrer" target="_blank"><i class="bi bi-twitter-x"></i></a>
+<a class="clay-icon-btn" href="https://linkedin.com/" rel="noopener noreferrer" target="_blank"><i class="bi bi-linkedin"></i></a>
+<a class="clay-icon-btn" href="https://instagram.com/" rel="noopener noreferrer" target="_blank"><i class="bi bi-instagram"></i></a>
+<a class="clay-icon-btn" href="https://youtube.com/" rel="noopener noreferrer" target="_blank"><i class="bi bi-youtube"></i></a>
+</div>
+</div>
+<div class="col-lg-2 col-md-6 col-6">
+<h5 class="fw-bold mb-4 syne-font">Company</h5>
+<ul class="list-unstyled pf-footer-links">
+<li><a href="/about.html">About</a></li>
+<li><a href="/coming-soon.html">Careers</a></li>
+<li><a href="/blog.html">Blog</a></li>
+<li><a href="/contact.html">Contact</a></li>
+</ul>
+</div>
+<div class="col-lg-2 col-md-6 col-6">
+<h5 class="fw-bold mb-4 syne-font">Services</h5>
+<ul class="list-unstyled pf-footer-links">
+<li><a href="/services.html">Rapid Prototyping</a></li>
+<li><a href="/services.html">Custom Parts</a></li>
+<li><a href="/services.html">Industrial Printing</a></li>
+<li><a href="/services2.html">Creative Printing</a></li>
+</ul>
+</div>
+<div class="col-lg-2 col-md-6 col-6">
+<h5 class="fw-bold mb-4 syne-font">Resources</h5>
+<ul class="list-unstyled pf-footer-links">
+<li><a href="/materials.html">Materials</a></li>
+<li><a href="/pricing.html">Pricing</a></li>
+<li><a href="/how-it-works.html">How to Order</a></li>
+<li><a href="/faq.html">FAQ</a></li>
+</ul>
+</div>
+<div class="col-lg-2 col-md-6 col-6">
+<h5 class="fw-bold mb-4 syne-font">Account</h5>
+<ul class="list-unstyled pf-footer-links">
+<li><a href="/login.html">Login</a></li>
+<li><a href="/register.html">Register</a></li>
+<li><a href="/dashboard/client-dashboard.html">Dashboard</a></li>
+<li><a href="/dashboard/orders.html">Orders</a></li>
+</ul>
+</div>
+</div>
+<div class="row mb-5">
+<div class="col-lg-6 mx-auto text-center">
+<div class="clay-card p-4 pf-newsletter-card">
+<h4 class="syne-font fw-bold mb-2">Stay Ahead of the Next Dimension</h4>
+<p class="text-muted small mb-4">Get updates about 3D printing technology, materials, design trends, and ProtoForge innovations.</p>
+<form action="https://formsubmit.co/clament.iq@outlook.com" class="d-flex gap-2" method="POST">
+<input class="form-control pf-input" name="email" placeholder="Enter your email" required="" type="email"/>
+<input name="_next" type="hidden" value="/index.html"/>
+<button class="btn btn-primary pf-btn-primary px-4" type="submit">Subscribe</button>
+</form>
+</div>
+</div>
+</div>
+<div class="row pt-4 border-top border-secondary-subtle align-items-center">
+<div class="col-12 text-center">
+                <p class="text-muted small mb-0">&copy; 2026 ProtoForge Studio. All rights reserved.</p>
+            </div>
+</div>
+</div>
+</footer>
+<!-- GSAP & ScrollTrigger -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core Scripts -->
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/auth.js"></script>
+<script>
+    // Robust Data Dictionary for Services
+    const servicesData = {
+        'industrial': {
+            '1': {
+                title: 'Rapid Prototyping',
+                desc: 'Accelerate product development with high-speed industrial printing.',
+                img: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80'
+            },
+            '2': {
+                title: 'Functional Prototypes',
+                desc: 'Test fit and function with strong, durable engineering materials.',
+                img: 'https://images.unsplash.com/photo-1581092335397-9583eb92d232?w=800&q=80'
+            },
+            '3': {
+                title: 'Custom Mechanical Parts',
+                desc: 'Low-volume end-use parts production for highly specific applications.',
+                img: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80'
+            },
+            '4': {
+                title: 'Large-Format Printing',
+                desc: 'Large scale 3D printing for factories, automotive, and aerospace.',
+                img: 'https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?w=800&q=80'
+            },
+            '5': {
+                title: 'Engineering Models',
+                desc: 'Detailed models for engineering analysis and stress testing.',
+                img: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=800&q=80'
+            },
+            '6': {
+                title: 'Automotive Tooling',
+                desc: 'Custom jigs, fixtures, and tooling for the automotive industry.',
+                img: 'https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=800&q=80'
+            },
+            '7': {
+                title: 'Architectural Scale Models',
+                desc: 'Highly detailed architectural concepts and urban planning models.',
+                img: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80'
+            },
+            '8': {
+                title: 'Product Development',
+                desc: 'End-to-end product creation from digital CAD to physical reality.',
+                img: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80'
+            },
+            '9': {
+                title: 'Design Consultation',
+                desc: 'Expert advice to optimize your models for structural integrity.',
+                img: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80'
+            }
+        },
+        'creative': {
+            '1': {
+                title: 'Artistic Sculptures',
+                desc: 'Turn your digital art into breathtaking physical sculptures.',
+                img: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&q=80'
+            },
+            '2': {
+                title: 'Custom Jewelry Design',
+                desc: 'High-detail resin printing for custom jewelry casting.',
+                img: 'https://images.unsplash.com/photo-1599643478524-fb66f70d00f8?w=800&q=80'
+            },
+            '3': {
+                title: 'Miniature Models',
+                desc: 'Ultra-high resolution printing for tabletop gaming and dioramas.',
+                img: 'https://images.unsplash.com/photo-1611078731720-43d0473ce414?w=800&q=80'
+            },
+            '4': {
+                title: 'Cosplay Props',
+                desc: 'Large-scale, lightweight props and armor for cosplayers.',
+                img: 'https://images.unsplash.com/photo-1544365558-35aa4afcf11f?w=800&q=80'
+            },
+            '5': {
+                title: 'Custom Action Figures',
+                desc: 'Bring your custom characters to life with posable action figures.',
+                img: 'https://images.unsplash.com/photo-1608889175123-8ee362201f81?w=800&q=80'
+            },
+            '6': {
+                title: 'Home Decor Elements',
+                desc: 'Unique, custom-designed vases, lampshades, and decor.',
+                img: 'https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=800&q=80'
+            },
+            '7': {
+                title: 'Film & Theater Props',
+                desc: 'Rapid production of highly detailed props for set design.',
+                img: 'https://images.unsplash.com/photo-1585647347384-2593bc35786b?w=800&q=80'
+            },
+            '8': {
+                title: 'Stop Motion Armatures',
+                desc: 'Precision printed armatures and character heads for animation.',
+                img: 'https://images.unsplash.com/photo-1605806616949-1e87b487cb2a?w=800&q=80'
+            },
+            '9': {
+                title: 'Fashion Accessories',
+                desc: 'Avant-garde 3D printed fashion accessories and wearables.',
+                img: 'https://images.unsplash.com/photo-1509319117193-57bab727e09d?w=800&q=80'
+            }
+        }
+    };
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const type = urlParams.get('type') || 'industrial';
+    const id = urlParams.get('id') || '1';
+
+    if (servicesData[type] && servicesData[type][id]) {
+        const data = servicesData[type][id];
+        
+        // Update DOM elements
+        const titleEl = document.querySelector('.hero-industrial h1');
+        const descEl = document.querySelector('.hero-industrial p.lead');
+        const imgEl = document.querySelector('.hero-industrial img');
+        
+        if (titleEl) titleEl.innerHTML = data.title;
+        if (descEl) descEl.innerHTML = data.desc;
+        if (imgEl) imgEl.src = data.img;
+        
+        // Update document title
+        document.title = "ProtoForge Studio | " + data.title;
+    }
+</script>
+<script src="/assets/js/theme-rtl.js"></script>
+</body>
+</html>
