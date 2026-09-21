@@ -105,7 +105,7 @@
 <div class="container fade-up">
 <div class="row align-items-center mb-5">
 <div class="col-lg-6 mb-4 mb-lg-0">
-<img alt="Functional Prototypes" class="img-fluid clay-card p-2 w-100" id="serviceHeroImg" src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=1200&amp;h=400&amp;fit=crop" style="height: 400px; object-fit: cover;"/>
+<img alt="Functional Prototypes" class="img-fluid clay-card p-2 w-100" id="serviceHeroImg" src="/assets/images/service_functional_prototype.jpg" style="height: 400px; object-fit: cover;"/>
 </div>
 <div class="col-lg-6 ps-lg-5">
 <h1 class="display-4 fw-bold syne-font mb-4" id="serviceTitle">Functional Prototypes</h1>
@@ -324,8 +324,8 @@
 <div class="col-lg-2 col-md-6 col-6">
 <h5 class="fw-bold mb-4 syne-font">Services</h5>
 <ul class="list-unstyled pf-footer-links">
-<li><a href="/services.html">Rapid Prototyping</a></li>
-<li><a href="/services.html">Custom Parts</a></li>
+<li><a href="/service-details-1.html">Rapid Prototyping</a></li>
+<li><a href="/service-details-3.html">Custom Parts</a></li>
 <li><a href="/services.html">Industrial Printing</a></li>
 <li><a href="/services2.html">Creative Printing</a></li>
 </ul>
@@ -409,91 +409,7 @@
             '6': {
                 title: 'Automotive Tooling',
                 desc: 'Custom jigs, fixtures, and tooling for the automotive industry.',
-                img: 'https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=800&q=80'
-            },
-            '7': {
-                title: 'Architectural Scale Models',
-                desc: 'Highly detailed architectural concepts and urban planning models.',
-                img: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80'
-            },
-            '8': {
-                title: 'Product Development',
-                desc: 'End-to-end product creation from digital CAD to physical reality.',
-                img: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80'
-            },
-            '9': {
-                title: 'Design Consultation',
-                desc: 'Expert advice to optimize your models for structural integrity.',
-                img: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80'
-            }
-        },
-        'creative': {
-            '1': {
-                title: 'Artistic Sculptures',
-                desc: 'Turn your digital art into breathtaking physical sculptures.',
-                img: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&q=80'
-            },
-            '2': {
-                title: 'Custom Jewelry Design',
-                desc: 'High-detail resin printing for custom jewelry casting.',
-                img: 'https://images.unsplash.com/photo-1599643478524-fb66f70d00f8?w=800&q=80'
-            },
-            '3': {
-                title: 'Miniature Models',
-                desc: 'Ultra-high resolution printing for tabletop gaming and dioramas.',
-                img: 'https://images.unsplash.com/photo-1611078731720-43d0473ce414?w=800&q=80'
-            },
-            '4': {
-                title: 'Cosplay Props',
-                desc: 'Large-scale, lightweight props and armor for cosplayers.',
-                img: 'https://images.unsplash.com/photo-1544365558-35aa4afcf11f?w=800&q=80'
-            },
-            '5': {
-                title: 'Custom Action Figures',
-                desc: 'Bring your custom characters to life with posable action figures.',
-                img: 'https://images.unsplash.com/photo-1608889175123-8ee362201f81?w=800&q=80'
-            },
-            '6': {
-                title: 'Home Decor Elements',
-                desc: 'Unique, custom-designed vases, lampshades, and decor.',
-                img: 'https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=800&q=80'
-            },
-            '7': {
-                title: 'Film & Theater Props',
-                desc: 'Rapid production of highly detailed props for set design.',
-                img: 'https://images.unsplash.com/photo-1585647347384-2593bc35786b?w=800&q=80'
-            },
-            '8': {
-                title: 'Stop Motion Armatures',
-                desc: 'Precision printed armatures and character heads for animation.',
-                img: 'https://images.unsplash.com/photo-1605806616949-1e87b487cb2a?w=800&q=80'
-            },
-            '9': {
-                title: 'Fashion Accessories',
-                desc: 'Avant-garde 3D printed fashion accessories and wearables.',
-                img: 'https://images.unsplash.com/photo-1509319117193-57bab727e09d?w=800&q=80'
-            }
-        }
-    };
-
-    const urlParams = new URLSearchParams(window.location.search);
-    const type = urlParams.get('type') || 'industrial';
-    const id = urlParams.get('id') || '1';
-
-    if (servicesData[type] && servicesData[type][id]) {
-        const data = servicesData[type][id];
-        
-        // Update DOM elements
-        const titleEl = document.querySelector('.hero-industrial h1');
-        const descEl = document.querySelector('.hero-industrial p.lead');
-        const imgEl = document.querySelector('.hero-industrial img');
-        
-        if (titleEl) titleEl.innerHTML = data.title;
-        if (descEl) descEl.innerHTML = data.desc;
-        if (imgEl) imgEl.src = data.img;
-        
-        // Update document title
-        document.title = "ProtoForge Studio | " + data.title;
+                img: '/assets/images/service_functional_prototype.jpg"ProtoForge Studio | " + data.title;
     }
 </script>
 <script src="/assets/js/theme-rtl.js"></script>

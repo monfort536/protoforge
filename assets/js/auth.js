@@ -184,8 +184,5 @@ function updateAuthUI() {
         bindThemeRtlToggles();
     }
 
-    // Protect dashboard routes
-    if (window.location.pathname.includes('/dashboard/') && !currentUser) {
-        window.location.href = '/login.html';
-    }
+    // Dashboard route protection removed for open navigation
 }

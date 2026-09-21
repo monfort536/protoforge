@@ -534,3 +534,133 @@ html[dir="rtl"] .accordion-button::after {
     color: var(--text-muted) !important;
     border-color: var(--border-color) !important;
 }
+
+
+/* Redesigned Mobile Navigation (Sidebar / Collapse) */
+@media (max-width: 1199.98px) {
+    /* Create a floating offcanvas-like card */
+    .navbar-collapse {
+        background: var(--surface-color) !important;
+        border-radius: 1rem !important;
+        padding: 1.5rem !important;
+        margin-top: 1rem !important;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.15) !important;
+        border: 1px solid var(--border-color) !important;
+        max-height: calc(100vh - 90px) !important;
+        overflow-y: auto !important;
+    }
+    
+    [data-theme="dark"] .navbar-collapse {
+        background: #0f172a !important; /* Rich deep blue/black for dark mode */
+        box-shadow: 0 10px 40px rgba(0,0,0,0.5) !important;
+        border: 1px solid rgba(255,255,255,0.05) !important;
+    }
+
+    /* Left-align all links with spacing and dividers */
+    .navbar-nav {
+        align-items: flex-start !important;
+        width: 100% !important;
+    }
+    
+    .navbar-nav .nav-item {
+        width: 100% !important;
+        text-align: left !important;
+        border-bottom: 1px solid var(--border-color) !important;
+        margin-bottom: 0 !important;
+    }
+    
+    .navbar-nav .nav-item:last-of-type {
+        border-bottom: none !important;
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 1rem 0 !important;
+        font-size: 1.1rem !important;
+        text-align: left !important;
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        width: 100% !important;
+    }
+
+    /* Dropdown styling to match */
+    .navbar-collapse .dropdown-menu {
+        position: static !important;
+        text-align: left !important;
+        padding-left: 1.5rem !important;
+        padding-top: 0 !important;
+        padding-bottom: 1rem !important;
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        margin-top: -0.5rem !important;
+    }
+    
+    .dropdown-item {
+        padding: 0.6rem 0 !important;
+        font-size: 1rem !important;
+        color: var(--text-secondary) !important;
+    }
+
+    /* Make buttons full-width */
+    .auth-buttons-container, 
+    .d-flex.justify-content-center.w-100 {
+        flex-direction: column !important;
+        margin-top: 1.5rem !important;
+        gap: 0.75rem !important;
+    }
+    
+    .auth-buttons-container .btn,
+    .d-flex.justify-content-center.w-100 .btn {
+        width: 100% !important;
+        justify-content: center !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    
+    /* Make the mobile toggles row (moon/RTL) align left */
+    .mobile-toggles {
+        margin-bottom: 0 !important;
+        margin-right: 0 !important;
+        margin-left: auto !important;
+    }
+}
+
+
+/* 1024px LTR & RTL Navbar Alignment Fix */
+@media (max-width: 1199.98px) {
+    .navbar > .container, .navbar > .container-fluid {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+    }
+    
+    .navbar-brand {
+        margin-inline-end: auto !important; /* Pushes brand to start */
+        margin-inline-start: 0 !important;
+    }
+    
+    .mobile-toggles {
+        margin-inline-start: auto !important; /* Pushes toggles to end, next to hamburger */
+        margin-inline-end: 1rem !important;
+        margin-left: unset !important;
+        margin-right: unset !important;
+    }
+}
+
+
+/* Fix Logo Text Breaking */
+.navbar-brand {
+    white-space: nowrap !important;
+}
+.navbar-brand span {
+    white-space: nowrap !important;
+}
+
+/* Fix Heading Text Clipping (Descenders clipping in Syne font) */
+.syne-font, h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4, .display-5, .display-6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    line-height: 1.3 !important;
+    padding-bottom: 0.1em !important; /* Provides a physical padding buffer so bottom descenders (g, y, p) don't get chopped off by container overflows */
+    
+}

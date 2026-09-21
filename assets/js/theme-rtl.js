@@ -26,6 +26,19 @@ function updateThemeIcon(theme) {
 function setDirection(direction) {
     document.documentElement.setAttribute("dir", direction);
     localStorage.setItem("protoforge_direction", direction);
+    
+    // Swap bootstrap CSS file to fix LTR/RTL overall alignment issues
+    const bsLinks = document.querySelectorAll('link[href*="bootstrap"]');
+    bsLinks.forEach(link => {
+        if (link.href.includes('bootstrap.min.css') || link.href.includes('bootstrap.rtl.min.css')) {
+            if (direction === 'rtl') {
+                link.href = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css';
+            } else {
+                link.href = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css';
+            }
+        }
+    });
+    
     updateDirectionIcon(direction);
     updateCharts(direction);
 }
