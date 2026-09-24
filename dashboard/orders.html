@@ -260,12 +260,6 @@
 
             openSidebar?.addEventListener('click', () => sidebar.classList.add('show'));
             closeSidebar?.addEventListener('click', () => sidebar.classList.remove('show'));
-            
-            // Check auth
-            const currentUser = JSON.parse(localStorage.getItem('protoforge_current_user'));
-            if(!currentUser) {
-                window.location.href = '/login.html';
-            }
         });
 
         function logout() {

@@ -155,7 +155,7 @@ function updateAuthUI() {
             const navList = pfNavbar.querySelector('.navbar-nav');
             if (navList) {
                 let existingDash = navList.querySelector('#dynamicDashboardLink');
-                // Always show the Dashboard link, even if logged out (it redirects to login automatically)
+                // Always show the Dashboard link, even if logged out (it is now openly accessible)
                 if (!existingDash) {
                     const dashLi = document.createElement('li');
                     dashLi.className = 'nav-item';
