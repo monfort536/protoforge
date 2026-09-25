@@ -48,36 +48,37 @@
 <body class="light-mode">
 
     <!-- Minimal Header for Auth Pages -->
-    <header class="position-absolute top-0 start-0 w-100 p-3 p-md-4 d-flex justify-content-between align-items-center" style="z-index: 1050;">
-        <a class="d-flex align-items-center text-decoration-none" href="/index.html" style="color: var(--text-primary);">
-            <div class="logo-icon me-2 text-primary-pf">
-                <svg width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M20 20H80V80H20V20Z" stroke="currentColor" stroke-width="8"/>
-                    <path d="M35 35H65V65H35V35Z" stroke="currentColor" stroke-width="8"/>
-                    <path d="M50 50L80 20" stroke="currentColor" stroke-width="8"/>
-                </svg>
-            </div>
-            <span class="syne-font fw-bold fs-5 fs-md-4 d-none d-sm-block">ProtoForge</span>
-        </a>
-
-        <div class="d-flex gap-2">
-            <button class="btn border rounded-4 d-flex align-items-center justify-content-center bg-transparent shadow-sm pf-hover-lift" id="themeToggle" style="width: 38px; height: 38px; color: var(--text-primary); border-color: var(--border-color) !important; transition: all 0.3s ease;">
-                <i class="bi bi-moon-stars"></i>
-            </button>
-            <button class="btn border rounded-4 d-flex align-items-center justify-content-center bg-transparent shadow-sm pf-hover-lift" id="rtlToggle" style="width: 38px; height: 38px; color: var(--text-primary); border-color: var(--border-color) !important; transition: all 0.3s ease;">
-                <span class="ltr-text fw-bold" style="font-size: 0.8rem;">RTL</span>
-            </button>
-        </div>
-    </header>
+    
 
     <!-- Main Content -->
     <main>
+    <!-- Floating Toggles -->
+    <div class="position-absolute top-0 end-0 p-3 p-md-4 d-flex gap-2" style="z-index: 1050;">
+        <button class="btn border rounded-4 d-flex align-items-center justify-content-center bg-transparent shadow-sm pf-hover-lift" id="themeToggle" style="width: 38px; height: 38px; color: var(--text-primary); border-color: var(--border-color) !important; transition: all 0.3s ease;">
+            <i class="bi bi-moon-stars"></i>
+        </button>
+        <button class="btn border rounded-4 d-flex align-items-center justify-content-center bg-transparent shadow-sm pf-hover-lift" id="rtlToggle" style="width: 38px; height: 38px; color: var(--text-primary); border-color: var(--border-color) !important; transition: all 0.3s ease;">
+            <span class="ltr-text fw-bold" style="font-size: 0.8rem;">RTL</span>
+        </button>
+    </div>
+
         <section class="min-vh-100 d-flex align-items-center py-5 pt-md-5 bg-light" style="padding-top: 6rem !important;">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-8 col-lg-6">
                         <div class="clay-card p-4 p-md-5">
                             <div class="text-center mb-5">
+                                <a class="d-flex align-items-center justify-content-center text-decoration-none mb-4 pf-hover-lift" href="/index.html" style="color: var(--text-primary);">
+                                    <div class="logo-icon me-2 text-primary-pf bg-primary text-white rounded-3 d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+                                        <svg width="24" height="24" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20 20H80V80H20V20Z" stroke="currentColor" stroke-width="8"/>
+                                            <path d="M35 35H65V65H35V35Z" stroke="currentColor" stroke-width="8"/>
+                                            <path d="M50 50L80 20" stroke="currentColor" stroke-width="8"/>
+                                        </svg>
+                                    </div>
+                                    <span class="syne-font fw-bold fs-3">ProtoForge</span>
+                                </a>
+
                                 <h2 class="syne-font fw-bold mb-2">Create Account</h2>
                                 <p class="text-muted">Join ProtoForge to manage your prints, orders, and materials.</p>
                             </div>

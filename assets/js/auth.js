@@ -73,7 +73,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 else if (!user.role) user.role = 'client';
                 
                 localStorage.setItem('protoforge_current_user', JSON.stringify(user));
-                window.location.href = '/dashboard/client-dashboard.html';
+                loginForm.reset();
+                window.location.href = window.location.pathname;
             } else {
                 const passInput = document.getElementById('password');
                 passInput.setCustomValidity("Invalid email or password");
