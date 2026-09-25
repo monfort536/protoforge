@@ -631,7 +631,7 @@ html[dir="rtl"] .accordion-button::after {
 @media (max-width: 1199.98px) {
     .navbar > .container, .navbar > .container-fluid {
         display: flex !important;
-        flex-wrap: nowrap !important;
+        flex-wrap: wrap !important;
         align-items: center !important;
         justify-content: space-between !important;
     }
@@ -664,3 +664,5 @@ html[dir="rtl"] .accordion-button::after {
     padding-bottom: 0.1em !important; /* Provides a physical padding buffer so bottom descenders (g, y, p) don't get chopped off by container overflows */
     
 }
+
+
