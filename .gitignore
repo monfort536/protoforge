@@ -1,0 +1,16 @@
+node_modules/
+dist/
+__pycache__/
+test-results/
+playwright-report/
+docs/screenshots/
+docs/*-desktop.png
+docs/*-mobile.png
+docs/*-fold.png
+docs/*-review.jpg
+docs/*-assets.jpg
+docs/route-review-*.jpg
+docs/home-detail-*.png
+scripts/generated-assets.json
+docs/final-pages-*.jpg
+docs/mobile-final.png

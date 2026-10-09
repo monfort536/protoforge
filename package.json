@@ -1,0 +1,32 @@
+{
+  "name": "protoforge-studio",
+  "version": "1.0.0",
+  "description": "ProtoForge static manufacturing website",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node scripts/preview.mjs",
+    "dev": "node scripts/preview.mjs",
+    "build": "python scripts/build.py && python scripts/check-links.py && python scripts/package-site.py",
+    "test": "node scripts/qa.mjs",
+    "preview": "node scripts/preview.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monfort536/protoforge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/monfort536/protoforge/issues"
+  },
+  "homepage": "https://github.com/monfort536/protoforge#readme",
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "^1.63.0"
+  },
+  "private": true
+}

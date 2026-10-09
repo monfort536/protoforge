@@ -1,0 +1,1631 @@
+[
+  {
+    "route": "404.html",
+    "headings": [
+      "404",
+      "Oops! This Print Went Off the Build Plate."
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1618477388954-7852f32655ec?w=400&h=400&fit=crop"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" method=\"POST\" class=\"d-flex gap-2\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "about.html",
+    "headings": [
+      "About ProtoForge Studio",
+      "100K+",
+      "99.8%",
+      "Our Mission",
+      "Our Vision",
+      "Our Journey",
+      "Meet the Experts",
+      "What Our Clients Say"
+    ],
+    "images": [
+      "/assets/images/about/facility.jpg",
+      "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?w=100&h=100&fit=crop",
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" method=\"POST\" class=\"d-flex gap-2\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "blog-details-1.html",
+    "headings": [
+      "Future of Industrial 3D Printing",
+      "The Shift to Production",
+      "Advancements in Materials",
+      "The Sustainability Factor"
+    ],
+    "images": [
+      "/assets/images/blog/blog_future_3d.jpg"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" class=\"d-flex gap-2\" method=\"POST\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "blog-details-2.html",
+    "headings": [
+      "Rapid Prototyping Explained",
+      "The Shift to Production",
+      "Advancements in Materials",
+      "The Sustainability Factor"
+    ],
+    "images": [
+      "/assets/images/blog/blog_rapid_prototype.jpg"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" class=\"d-flex gap-2\" method=\"POST\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "blog-details-3.html",
+    "headings": [
+      "Choosing the Right Printing Material",
+      "The Shift to Production",
+      "Advancements in Materials",
+      "The Sustainability Factor"
+    ],
+    "images": [
+      "/assets/images/blog/blog_materials.jpg"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" class=\"d-flex gap-2\" method=\"POST\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "blog-details-4.html",
+    "headings": [
+      "3D Printing in Automotive Engineering",
+      "The Shift to Production",
+      "Advancements in Materials",
+      "The Sustainability Factor"
+    ],
+    "images": [
+      "/assets/images/blog/blog_auto.jpg"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" class=\"d-flex gap-2\" method=\"POST\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "blog-details-5.html",
+    "headings": [
+      "Reducing Manufacturing Costs",
+      "The Shift to Production",
+      "Advancements in Materials",
+      "The Sustainability Factor"
+    ],
+    "images": [
+      "/assets/images/blog/blog_costs.jpg"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" class=\"d-flex gap-2\" method=\"POST\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "blog-details-6.html",
+    "headings": [
+      "Functional Prototype Design",
+      "The Shift to Production",
+      "Advancements in Materials",
+      "The Sustainability Factor"
+    ],
+    "images": [
+      "/assets/images/blog/blog_design.jpg"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" class=\"d-flex gap-2\" method=\"POST\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "blog-details-7.html",
+    "headings": [
+      "Industrial Design Trends",
+      "The Shift to Production",
+      "Advancements in Materials",
+      "The Sustainability Factor"
+    ],
+    "images": [
+      "/assets/images/blog/blog_trends.jpg"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" class=\"d-flex gap-2\" method=\"POST\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "blog-details-8.html",
+    "headings": [
+      "Additive Manufacturing Guide",
+      "The Shift to Production",
+      "Advancements in Materials",
+      "The Sustainability Factor"
+    ],
+    "images": [
+      "/assets/images/blog/blog_guide.jpg"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" class=\"d-flex gap-2\" method=\"POST\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "blog-details-9.html",
+    "headings": [
+      "From CAD to Physical Product",
+      "The Shift to Production",
+      "Advancements in Materials",
+      "The Sustainability Factor"
+    ],
+    "images": [
+      "/assets/images/blog/blog_cad.jpg"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" class=\"d-flex gap-2\" method=\"POST\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "blog-details.html",
+    "headings": [
+      "Future of Industrial 3D Printing",
+      "The Shift to Production",
+      "Advancements in Materials",
+      "The Sustainability Factor",
+      "Related Articles"
+    ],
+    "images": [
+      "/assets/images/blog/blog_future_3d.jpg",
+      "/assets/images/blog/blog_future_3d.jpg",
+      "/assets/images/blog/blog_future_3d.jpg"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" method=\"POST\" class=\"d-flex gap-2\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "blog.html",
+    "headings": [
+      "Industrial Insights"
+    ],
+    "images": [
+      "/assets/images/blog/blog_future_3d.jpg",
+      "/assets/images/blog/blog_rapid_prototype.jpg",
+      "/assets/images/blog/blog_materials.jpg",
+      "/assets/images/blog/blog_auto.jpg",
+      "/assets/images/blog/blog_costs.jpg",
+      "/assets/images/blog/blog_design.jpg",
+      "/assets/images/blog/blog_trends.jpg",
+      "/assets/images/blog/blog_guide.jpg",
+      "/assets/images/blog/blog_cad.jpg"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" class=\"d-flex gap-2\" method=\"POST\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "blog2.html",
+    "headings": [
+      "Creative Insights"
+    ],
+    "images": [
+      "/assets/images/blog2/creative_ideas.jpg",
+      "/assets/images/blog2/artists_3d.jpg",
+      "/assets/images/blog2/figurine_design.jpg",
+      "/assets/images/blog2/best_materials.jpg",
+      "/assets/images/blog2/beginner_tips.jpg",
+      "/assets/images/blog2/personalized_gifts.jpg",
+      "/assets/images/blog2/cosplay_printing.jpg",
+      "/assets/images/blog2/miniature_creation.jpg",
+      "/assets/images/blog2/future_manufacturing.jpg"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" class=\"d-flex gap-2\" method=\"POST\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "coming-soon.html",
+    "headings": [
+      "Something Incredible is Printing...",
+      "14",
+      "08",
+      "45"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1600&h=900&fit=crop"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" method=\"POST\" class=\"d-flex gap-2\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "contact.html",
+    "headings": [
+      "Get in Touch",
+      "Contact Information"
+    ],
+    "images": [],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" method=\"POST\" id=\"contactForm\">",
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" method=\"POST\" class=\"d-flex gap-2\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "creative-blog-1.html",
+    "headings": [
+      "Creative Ideas for 3D Printing",
+      "The Shift to Production",
+      "Advancements in Materials",
+      "The Sustainability Factor"
+    ],
+    "images": [
+      "/assets/images/blog2/creative_ideas.jpg"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" class=\"d-flex gap-2\" method=\"POST\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "creative-blog-2.html",
+    "headings": [
+      "How Artists Use 3D Printing",
+      "The Shift to Production",
+      "Advancements in Materials",
+      "The Sustainability Factor"
+    ],
+    "images": [
+      "/assets/images/blog2/artists_3d.jpg"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" class=\"d-flex gap-2\" method=\"POST\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "creative-blog-3.html",
+    "headings": [
+      "Custom Figurine Design Guide",
+      "The Shift to Production",
+      "Advancements in Materials",
+      "The Sustainability Factor"
+    ],
+    "images": [
+      "/assets/images/blog2/figurine_design.jpg"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" class=\"d-flex gap-2\" method=\"POST\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "creative-blog-4.html",
+    "headings": [
+      "Best Materials for Creative Projects",
+      "The Shift to Production",
+      "Advancements in Materials",
+      "The Sustainability Factor"
+    ],
+    "images": [
+      "/assets/images/blog2/best_materials.jpg"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" class=\"d-flex gap-2\" method=\"POST\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "creative-blog-5.html",
+    "headings": [
+      "Beginner 3D Printing Tips",
+      "The Shift to Production",
+      "Advancements in Materials",
+      "The Sustainability Factor"
+    ],
+    "images": [
+      "/assets/images/blog2/beginner_tips.jpg"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" class=\"d-flex gap-2\" method=\"POST\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "creative-blog-6.html",
+    "headings": [
+      "Designing Personalized Gifts",
+      "The Shift to Production",
+      "Advancements in Materials",
+      "The Sustainability Factor"
+    ],
+    "images": [
+      "/assets/images/blog2/personalized_gifts.jpg"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" class=\"d-flex gap-2\" method=\"POST\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "creative-blog-7.html",
+    "headings": [
+      "Cosplay with 3D Printing",
+      "The Shift to Production",
+      "Advancements in Materials",
+      "The Sustainability Factor"
+    ],
+    "images": [
+      "/assets/images/blog2/cosplay_printing.jpg"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" class=\"d-flex gap-2\" method=\"POST\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "creative-blog-8.html",
+    "headings": [
+      "Miniature Model Creation",
+      "The Shift to Production",
+      "Advancements in Materials",
+      "The Sustainability Factor"
+    ],
+    "images": [
+      "/assets/images/blog2/miniature_creation.jpg"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" class=\"d-flex gap-2\" method=\"POST\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "creative-blog-9.html",
+    "headings": [
+      "Future of Creative Manufacturing",
+      "The Shift to Production",
+      "Advancements in Materials",
+      "The Sustainability Factor"
+    ],
+    "images": [
+      "/assets/images/blog2/future_manufacturing.jpg"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" class=\"d-flex gap-2\" method=\"POST\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "creative-service-1.html",
+    "headings": [
+      "Custom Figurines",
+      "Overview",
+      "What We Provide",
+      "Our Process",
+      "Frequently Asked Questions",
+      "What is the typical turnaround time?",
+      "What file formats do you accept?",
+      "What are the maximum print dimensions?",
+      "Are the parts functional?",
+      "Do you sign NDAs?"
+    ],
+    "images": [
+      "/assets/images/services2/custom_figurines.jpg"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" class=\"d-flex gap-2\" method=\"POST\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "creative-service-2.html",
+    "headings": [
+      "Miniature Models",
+      "Overview",
+      "What We Provide",
+      "Our Process",
+      "Frequently Asked Questions",
+      "What is the typical turnaround time?",
+      "What file formats do you accept?",
+      "What are the maximum print dimensions?",
+      "Are the parts functional?",
+      "Do you sign NDAs?"
+    ],
+    "images": [
+      "/assets/images/services2/miniature_models.jpg"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" class=\"d-flex gap-2\" method=\"POST\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "creative-service-3.html",
+    "headings": [
+      "Artistic Sculptures",
+      "Overview",
+      "What We Provide",
+      "Our Process",
+      "Frequently Asked Questions",
+      "What is the typical turnaround time?",
+      "What file formats do you accept?",
+      "What are the maximum print dimensions?",
+      "Are the parts functional?",
+      "Do you sign NDAs?"
+    ],
+    "images": [
+      "/assets/images/services2/artistic_sculptures.jpg"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" class=\"d-flex gap-2\" method=\"POST\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "creative-service-4.html",
+    "headings": [
+      "Cosplay Parts",
+      "Overview",
+      "What We Provide",
+      "Our Process",
+      "Frequently Asked Questions",
+      "What is the typical turnaround time?",
+      "What file formats do you accept?",
+      "What are the maximum print dimensions?",
+      "Are the parts functional?",
+      "Do you sign NDAs?"
+    ],
+    "images": [
+      "/assets/images/services2/jewelry_prototyping.jpg"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" class=\"d-flex gap-2\" method=\"POST\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "creative-service-5.html",
+    "headings": [
+      "Personalized Gifts",
+      "Overview",
+      "What We Provide",
+      "Our Process",
+      "Frequently Asked Questions",
+      "What is the typical turnaround time?",
+      "What file formats do you accept?",
+      "What are the maximum print dimensions?",
+      "Are the parts functional?",
+      "Do you sign NDAs?"
+    ],
+    "images": [
+      "/assets/images/services2/cosplay_props.jpg"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" class=\"d-flex gap-2\" method=\"POST\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "creative-service-6.html",
+    "headings": [
+      "Jewellery Prototypes",
+      "Overview",
+      "What We Provide",
+      "Our Process",
+      "Frequently Asked Questions",
+      "What is the typical turnaround time?",
+      "What file formats do you accept?",
+      "What are the maximum print dimensions?",
+      "Are the parts functional?",
+      "Do you sign NDAs?"
+    ],
+    "images": [
+      "/assets/images/services2/architectural_models.jpg"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" class=\"d-flex gap-2\" method=\"POST\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "creative-service-7.html",
+    "headings": [
+      "Creative Product Models",
+      "Overview",
+      "What We Provide",
+      "Our Process",
+      "Frequently Asked Questions",
+      "What is the typical turnaround time?",
+      "What file formats do you accept?",
+      "What are the maximum print dimensions?",
+      "Are the parts functional?",
+      "Do you sign NDAs?"
+    ],
+    "images": [
+      "/assets/images/services2/board_game_parts.jpg"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" class=\"d-flex gap-2\" method=\"POST\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "creative-service-8.html",
+    "headings": [
+      "Educational Models",
+      "Overview",
+      "What We Provide",
+      "Our Process",
+      "Frequently Asked Questions",
+      "What is the typical turnaround time?",
+      "What file formats do you accept?",
+      "What are the maximum print dimensions?",
+      "Are the parts functional?",
+      "Do you sign NDAs?"
+    ],
+    "images": [
+      "/assets/images/services2/educational_models.jpg"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" class=\"d-flex gap-2\" method=\"POST\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "creative-service-9.html",
+    "headings": [
+      "Custom Design Printing",
+      "Overview",
+      "What We Provide",
+      "Our Process",
+      "Frequently Asked Questions",
+      "What is the typical turnaround time?",
+      "What file formats do you accept?",
+      "What are the maximum print dimensions?",
+      "Are the parts functional?",
+      "Do you sign NDAs?"
+    ],
+    "images": [
+      "/assets/images/services2/film_props.jpg"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" class=\"d-flex gap-2\" method=\"POST\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "faq.html",
+    "headings": [
+      "Frequently Asked Questions",
+      "What file formats do you accept for 3D printing?",
+      "How long does a typical order take?",
+      "What materials are best for outdoor use?",
+      "Do you offer bulk discounts for mass production?",
+      "Can I cancel or modify my order after submitting?"
+    ],
+    "images": [],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" method=\"POST\" class=\"d-flex gap-2\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "home-creative.html",
+    "headings": [
+      "Bring Your Boldest Ideas to Life in 3D",
+      "Popular Creations",
+      "Empowering Your Creativity",
+      "Pushing the Boundaries of Resin Art",
+      "50k+",
+      "120+",
+      "99%",
+      "24h",
+      "Ready to Create?"
+    ],
+    "images": [
+      "/assets/images/blog2/creative_ideas.jpg",
+      "/assets/images/services2/custom_figurines.jpg",
+      "/assets/images/services2/artistic_sculptures.jpg",
+      "/assets/images/services2/board_game_parts.jpg",
+      "/assets/images/blog2/artists_3d.jpg",
+      "/assets/images/services2/cosplay_props.jpg",
+      "/assets/images/creative_dragon_sculpture.jpg"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" class=\"d-flex gap-2\" method=\"POST\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "how-it-works.html",
+    "headings": [
+      "How to Order",
+      "$45.00",
+      "5",
+      "6",
+      "7"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1618477388954-7852f32655ec?w=600&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=600&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1581092335397-9583eb92d232?w=600&h=400&fit=crop"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" method=\"POST\" class=\"d-flex gap-2\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "index.html",
+    "headings": [
+      "Transforming Digital Designs Into Precision Reality",
+      "Industrial Capabilities",
+      "From CAD to Reality in 4 Steps"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=800&fit=crop",
+      "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&h=400&fit=crop",
+      "/assets/images/service_functional_prototype.jpg",
+      "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=600&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&h=600&fit=crop"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" method=\"POST\" class=\"d-flex gap-2\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "login.html",
+    "headings": [
+      "Welcome Back"
+    ],
+    "images": [],
+    "forms": [
+      "<form id=\"loginForm\" class=\"needs-validation\" novalidate>"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "maintenance.html",
+    "headings": [
+      "We're Upgrading the Future of Printing"
+    ],
+    "images": [],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" method=\"POST\" class=\"d-flex gap-2\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "materials.html",
+    "headings": [
+      "Materials Library",
+      "Material Comparison",
+      "Detailed Material Profiles"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1581092335397-9583eb92d232?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=400&h=400&fit=crop"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" method=\"POST\" class=\"d-flex gap-2\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "pricing.html",
+    "headings": [
+      "Transparent Pricing",
+      "$0/mo",
+      "$49/mo",
+      "$299/mo",
+      "Estimate Your Print",
+      "$15.00"
+    ],
+    "images": [],
+    "forms": [
+      "<form id=\"calculatorForm\">",
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" method=\"POST\" class=\"d-flex gap-2\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "register.html",
+    "headings": [
+      "Create Account"
+    ],
+    "images": [],
+    "forms": [
+      "<form id=\"registerForm\" class=\"needs-validation\" novalidate>"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "service-details-1.html",
+    "headings": [
+      "Rapid Prototyping",
+      "Overview",
+      "What We Provide",
+      "Our Process",
+      "Frequently Asked Questions",
+      "What is the typical turnaround time?",
+      "What file formats do you accept?",
+      "What are the maximum print dimensions?",
+      "Are the parts functional?",
+      "Do you sign NDAs?"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1200&amp;h=400&amp;fit=crop"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" class=\"d-flex gap-2\" method=\"POST\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "service-details-2.html",
+    "headings": [
+      "Functional Prototypes",
+      "Overview",
+      "What We Provide",
+      "Our Process",
+      "Frequently Asked Questions",
+      "What is the typical turnaround time?",
+      "What file formats do you accept?",
+      "What are the maximum print dimensions?",
+      "Are the parts functional?",
+      "Do you sign NDAs?"
+    ],
+    "images": [
+      "/assets/images/service_functional_prototype.jpg"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" class=\"d-flex gap-2\" method=\"POST\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "service-details-3.html",
+    "headings": [
+      "Custom Mechanical Parts",
+      "Overview",
+      "What We Provide",
+      "Our Process",
+      "Frequently Asked Questions",
+      "What is the typical turnaround time?",
+      "What file formats do you accept?",
+      "What are the maximum print dimensions?",
+      "Are the parts functional?",
+      "Do you sign NDAs?"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=1200&amp;h=400&amp;fit=crop"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" class=\"d-flex gap-2\" method=\"POST\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "service-details-4.html",
+    "headings": [
+      "Industrial Manufacturing",
+      "Overview",
+      "What We Provide",
+      "Our Process",
+      "Frequently Asked Questions",
+      "What is the typical turnaround time?",
+      "What file formats do you accept?",
+      "What are the maximum print dimensions?",
+      "Are the parts functional?",
+      "Do you sign NDAs?"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&amp;h=400&amp;fit=crop"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" class=\"d-flex gap-2\" method=\"POST\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "service-details-5.html",
+    "headings": [
+      "Engineering Models",
+      "Overview",
+      "What We Provide",
+      "Our Process",
+      "Frequently Asked Questions",
+      "What is the typical turnaround time?",
+      "What file formats do you accept?",
+      "What are the maximum print dimensions?",
+      "Are the parts functional?",
+      "Do you sign NDAs?"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=1200&amp;h=400&amp;fit=crop"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" class=\"d-flex gap-2\" method=\"POST\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "service-details-6.html",
+    "headings": [
+      "Automotive Prototyping",
+      "Overview",
+      "What We Provide",
+      "Our Process",
+      "Frequently Asked Questions",
+      "What is the typical turnaround time?",
+      "What file formats do you accept?",
+      "What are the maximum print dimensions?",
+      "Are the parts functional?",
+      "Do you sign NDAs?"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1200&amp;h=400&amp;fit=crop"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" class=\"d-flex gap-2\" method=\"POST\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "service-details-7.html",
+    "headings": [
+      "Architecture Models",
+      "Overview",
+      "What We Provide",
+      "Our Process",
+      "Frequently Asked Questions",
+      "What is the typical turnaround time?",
+      "What file formats do you accept?",
+      "What are the maximum print dimensions?",
+      "Are the parts functional?",
+      "Do you sign NDAs?"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&amp;h=400&amp;fit=crop"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" class=\"d-flex gap-2\" method=\"POST\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "service-details-8.html",
+    "headings": [
+      "Product Development",
+      "Overview",
+      "What We Provide",
+      "Our Process",
+      "Frequently Asked Questions",
+      "What is the typical turnaround time?",
+      "What file formats do you accept?",
+      "What are the maximum print dimensions?",
+      "Are the parts functional?",
+      "Do you sign NDAs?"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1581092335397-9583eb92d232?w=1200&amp;h=400&amp;fit=crop"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" class=\"d-flex gap-2\" method=\"POST\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "service-details-9.html",
+    "headings": [
+      "Design Consultation",
+      "Overview",
+      "What We Provide",
+      "Our Process",
+      "Frequently Asked Questions",
+      "What is the typical turnaround time?",
+      "What file formats do you accept?",
+      "What are the maximum print dimensions?",
+      "Are the parts functional?",
+      "Do you sign NDAs?"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=1200&amp;h=400&amp;fit=crop"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" class=\"d-flex gap-2\" method=\"POST\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "service-details.html",
+    "headings": [
+      "Rapid Prototyping",
+      "Overview",
+      "What We Provide",
+      "Our Process",
+      "Frequently Asked Questions",
+      "What is the typical turnaround time?",
+      "What file formats do you accept?",
+      "What are the maximum print dimensions?",
+      "Are the parts functional?",
+      "Do you sign NDAs?"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&h=600&fit=crop"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" method=\"POST\" class=\"d-flex gap-2\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "services.html",
+    "headings": [
+      "Industrial Services"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&amp;h=400&amp;fit=crop",
+      "/assets/images/service_functional_prototype.jpg",
+      "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=600&amp;h=400&amp;fit=crop",
+      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&amp;h=400&amp;fit=crop",
+      "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600&amp;h=400&amp;fit=crop",
+      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=600&amp;h=400&amp;fit=crop",
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&amp;h=400&amp;fit=crop",
+      "https://images.unsplash.com/photo-1581092335397-9583eb92d232?w=600&amp;h=400&amp;fit=crop",
+      "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=600&amp;h=400&amp;fit=crop"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" class=\"d-flex gap-2\" method=\"POST\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "services2.html",
+    "headings": [
+      "Creative Services"
+    ],
+    "images": [
+      "/assets/images/services2/custom_figurines.jpg",
+      "/assets/images/services2/miniature_models.jpg",
+      "/assets/images/services2/artistic_sculptures.jpg",
+      "/assets/images/services2/jewelry_prototyping.jpg",
+      "/assets/images/services2/cosplay_props.jpg",
+      "/assets/images/services2/architectural_models.jpg",
+      "/assets/images/services2/board_game_parts.jpg",
+      "/assets/images/services2/educational_models.jpg",
+      "/assets/images/services2/film_props.jpg"
+    ],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" class=\"d-flex gap-2\" method=\"POST\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "upload-design.html",
+    "headings": [
+      "Upload Your 3D Design",
+      "Calculated after upload"
+    ],
+    "images": [],
+    "forms": [
+      "<form action=\"https://formsubmit.co/clament.iq@outlook.com\" method=\"POST\" class=\"d-flex gap-2\">"
+    ],
+    "scripts": [
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js",
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "/assets/js/main.js",
+      "/assets/js/auth.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "dashboard\\admin-dashboard.html",
+    "headings": [
+      "Admin Overview",
+      "1,248",
+      "386",
+      "$48.6k",
+      "72"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=100&amp;h=100&amp;fit=crop",
+      "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=100&amp;h=100&amp;fit=crop",
+      "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?w=100&amp;h=100&amp;fit=crop",
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&amp;h=100&amp;fit=crop"
+    ],
+    "forms": [],
+    "scripts": [
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "https://cdn.jsdelivr.net/npm/chart.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "dashboard\\admin-messages.html",
+    "headings": [
+      "Inbox"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=100&amp;h=100&amp;fit=crop"
+    ],
+    "forms": [
+      "<form>"
+    ],
+    "scripts": [
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "https://cdn.jsdelivr.net/npm/chart.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "dashboard\\admin-orders.html",
+    "headings": [
+      "Print Orders"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=100&amp;h=100&amp;fit=crop"
+    ],
+    "forms": [],
+    "scripts": [
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "https://cdn.jsdelivr.net/npm/chart.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "dashboard\\admin-users.html",
+    "headings": [
+      "User Management"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=100&amp;h=100&amp;fit=crop",
+      "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=100&amp;h=100&amp;fit=crop",
+      "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?w=100&amp;h=100&amp;fit=crop"
+    ],
+    "forms": [],
+    "scripts": [
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "https://cdn.jsdelivr.net/npm/chart.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "dashboard\\client-dashboard.html",
+    "headings": [
+      "Dashboard Overview",
+      "12",
+      "48",
+      "5",
+      "63"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=100&amp;h=100&amp;fit=crop"
+    ],
+    "forms": [],
+    "scripts": [
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "https://cdn.jsdelivr.net/npm/chart.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "dashboard\\my-print-jobs.html",
+    "headings": [
+      "My Print Jobs"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=100&amp;h=100&amp;fit=crop",
+      "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=400&amp;h=300&amp;fit=crop",
+      "https://images.unsplash.com/photo-1615840287214-7ff58936c4cf?w=400&amp;h=300&amp;fit=crop",
+      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&amp;h=300&amp;fit=crop"
+    ],
+    "forms": [],
+    "scripts": [
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "https://cdn.jsdelivr.net/npm/chart.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "dashboard\\notifications.html",
+    "headings": [
+      "Notifications"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=100&amp;h=100&amp;fit=crop"
+    ],
+    "forms": [],
+    "scripts": [
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "https://cdn.jsdelivr.net/npm/chart.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "dashboard\\orders.html",
+    "headings": [
+      "Orders History"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=100&amp;h=100&amp;fit=crop"
+    ],
+    "forms": [],
+    "scripts": [
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "https://cdn.jsdelivr.net/npm/chart.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "dashboard\\payments.html",
+    "headings": [
+      "Payments &amp; Billing",
+      "$1,245.50",
+      "$0.00",
+      "$125.00"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=100&amp;h=100&amp;fit=crop"
+    ],
+    "forms": [],
+    "scripts": [
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "https://cdn.jsdelivr.net/npm/chart.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "dashboard\\profile.html",
+    "headings": [
+      "Account Profile"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=100&amp;h=100&amp;fit=crop",
+      "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=400&amp;h=400&amp;fit=crop"
+    ],
+    "forms": [
+      "<form id=\"profileForm\">"
+    ],
+    "scripts": [
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "https://cdn.jsdelivr.net/npm/chart.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  },
+  {
+    "route": "dashboard\\upload-design.html",
+    "headings": [
+      "Upload Design"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=100&amp;h=100&amp;fit=crop"
+    ],
+    "forms": [
+      "<form class=\"d-none\" id=\"configForm\">"
+    ],
+    "scripts": [
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      "https://cdn.jsdelivr.net/npm/chart.js",
+      "/assets/js/theme-rtl.js"
+    ]
+  }
+]

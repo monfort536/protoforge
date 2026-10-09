@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Metal-filled composite sample</title>
+  <desc id="desc">A metallic-finish printed engineering bracket on a neutral workbench.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e7e8e9"/><stop offset="1" stop-color="#b7babd"/></linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5f6f6"/><stop offset=".35" stop-color="#9da2a6"/><stop offset=".7" stop-color="#4d545b"/><stop offset="1" stop-color="#c7cbcd"/></linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5e656b"/><stop offset="1" stop-color="#242a2f"/></linearGradient>
+    <filter id="shadow" x="-.2" y="-.2" width="1.4" height="1.5"><feGaussianBlur stdDeviation="18"/></filter>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse"><path d="M44 0H0V44" fill="none" stroke="#fff" stroke-opacity=".17"/></pattern>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <rect width="1200" height="800" fill="url(#grid)" opacity=".32"/>
+  <ellipse cx="614" cy="620" rx="350" ry="70" fill="#252b30" opacity=".26" filter="url(#shadow)"/>
+  <g transform="translate(270 112) skewY(8)">
+    <path d="M90 460V160l82-72h420l112 100v272l-110 86H172Z" fill="url(#edge)"/>
+    <path d="M90 160 198 82h420l86 106-104 82H198Z" fill="url(#metal)" stroke="#4d545a" stroke-width="6"/>
+    <path d="M198 270h402l104-82v272l-104 86H198Z" fill="url(#metal)" stroke="#363d42" stroke-width="6"/>
+    <path d="M198 270 90 160v300l108 82Z" fill="#737a7f" stroke="#363d42" stroke-width="6"/>
+    <path d="M230 242h342l65-51-56-58H258l-62 52Z" fill="#2d3439" opacity=".82"/>
+    <path d="M258 133h323l36 38-54 39H224Z" fill="#d8dcdd" opacity=".88"/>
+    <g fill="#22292e" stroke="#cfd3d4" stroke-width="7">
+      <circle cx="165" cy="220" r="40"/><circle cx="657" cy="210" r="40"/>
+      <circle cx="165" cy="400" r="40"/><circle cx="657" cy="390" r="40"/>
+    </g>
+    <g fill="none" stroke="#f7f8f8" stroke-opacity=".7" stroke-width="5"><path d="M234 312h330M234 338h330M234 364h330"/><path d="M279 111v118M329 102v125M379 94v133M429 91v136M479 91v136M529 97v130"/></g>
+    <path d="M200 82h418l86 106" fill="none" stroke="#fff" stroke-opacity=".65" stroke-width="7"/>
+  </g>
+  <circle cx="1000" cy="148" r="6" fill="#1268f3"/><circle cx="1030" cy="148" r="6" fill="#1268f3" opacity=".45"/><circle cx="1060" cy="148" r="6" fill="#1268f3" opacity=".2"/>
+</svg>
