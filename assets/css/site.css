@@ -1110,3 +1110,45 @@ input[aria-invalid="true"],select[aria-invalid="true"],textarea[aria-invalid="tr
  .creator-journey-section .creator-journey article>img{height:auto;aspect-ratio:16/9}
  .creator-journey-section .creator-journey article>div{padding:20px}
 }
+
+/* Requested layout and account refinements. */
+body[data-page="products.html"] .page-hero .container>div,
+body[data-page="how-it-works.html"] .page-hero .container>div,
+body[data-page="pricing.html"] .page-hero .container>div,
+body[data-page="about.html"] .page-hero .container>div,
+body[data-page="blog.html"] .page-hero .container>div,
+body[data-page="contact.html"] .page-hero .container>div{ text-align:center; margin-inline:auto; }
+body[data-page="products.html"] .page-hero .breadcrumb,
+body[data-page="how-it-works.html"] .page-hero .breadcrumb,
+body[data-page="pricing.html"] .page-hero .breadcrumb,
+body[data-page="about.html"] .page-hero .breadcrumb,
+body[data-page="blog.html"] .page-hero .breadcrumb,
+body[data-page="contact.html"] .page-hero .breadcrumb{ justify-content:center; }
+body[data-page="products.html"] .page-hero .lead,
+body[data-page="how-it-works.html"] .page-hero .lead,
+body[data-page="pricing.html"] .page-hero .lead,
+body[data-page="about.html"] .page-hero .lead,
+body[data-page="blog.html"] .page-hero .lead,
+body[data-page="contact.html"] .page-hero .lead{ margin-inline:auto; }
+.profile-card{margin:26px 0 30px}
+.profile-card .section-head{margin-bottom:20px}
+.profile-card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 24px}
+.profile-card-grid>div{min-width:0}
+.profile-card-grid span{display:block;color:var(--muted);font-size:11px;margin-bottom:4px}
+.profile-card-grid strong{display:block;overflow-wrap:anywhere;font-size:14px}
+.profile-card-wide{grid-column:1/-1}
+.auth-heading{text-align:center;margin-bottom:24px}
+.auth-heading p{margin-bottom:0}
+.auth-social{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-bottom:18px}
+.auth-social button{display:flex;align-items:center;justify-content:center;gap:7px;min-height:42px;padding:9px 8px;border:1px solid var(--line);border-radius:6px;background:var(--paper);color:var(--ink);font-size:12px;font-weight:600}
+.auth-social button:hover,.auth-social button:focus-visible{border-color:var(--blue);color:var(--blue);background:var(--wash)}
+.social-icon{display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;font:700 14px/1 Manrope,sans-serif}
+.social-icon-grid{display:grid;grid-template-columns:repeat(2,6px);grid-template-rows:repeat(2,6px);gap:2px}
+.social-icon-grid i{display:block;background:currentColor}
+.auth-divider{display:flex;align-items:center;gap:12px;color:var(--muted);font-size:11px;margin:0 0 20px}
+.auth-divider:before,.auth-divider:after{content:'';height:1px;flex:1;background:var(--line)}
+@media(max-width:479px){
+ .profile-card-grid{grid-template-columns:1fr}
+ .profile-card-wide{grid-column:auto}
+ .auth-social{grid-template-columns:1fr}
+}

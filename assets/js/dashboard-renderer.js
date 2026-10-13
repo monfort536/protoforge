@@ -8,6 +8,7 @@
   const money = value => `₹${Number(value || 0).toLocaleString('en-IN')}`;
   const date = value => new Date(`${value}T00:00:00`).toLocaleDateString('en-GB', {day:'2-digit', month:'short', year:'numeric'});
   const localUser = () => { try { return JSON.parse(localStorage.getItem('protoforge_current_user')); } catch { return null; } };
+  const localProfile = () => { const account = localUser(); if (!account) return {}; try { return JSON.parse(localStorage.getItem(`protoforge_profile_${account.id}`)) || {}; } catch { return {}; } };
   const localProjects = () => { const account = localUser(); if (!account) return []; try { return JSON.parse(localStorage.getItem(`protoforge_projects_${account.id}`)) || []; } catch { return []; } };
   const statusClass = value => `status-${String(value || '').toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
   const statusTag = value => `<span class="tag ${statusClass(value)}">${esc(value)}</span>`;
@@ -22,6 +23,13 @@
   function statCards() {
     const s = data.stats;
     return `<div class="stats"><a class="stat" href="../dashboard/orders.html"><span>Active Orders</span><strong>${s.activeOrders}</strong><small>In production</small></a><a class="stat" href="../dashboard/quotes.html"><span>Pending Quotes</span><strong>${s.pendingQuotes}</strong><small>Awaiting decisions</small></a><a class="stat" href="../dashboard/models.html"><span>Models Uploaded</span><strong>${s.modelsUploaded}</strong><small>Files analysed</small></a><a class="stat" href="../dashboard/my-print-jobs.html"><span>Completed Prints</span><strong>${s.completedPrints}</strong><small>Delivered projects</small></a></div>`;
+  }
+
+  function profileCard() {
+    const account = localUser();
+    const saved = account ? localProfile() : {};
+    const profile = account ? { name: account.name, email: account.email, company: saved.company || 'Not added yet', phone: saved.phone || 'Not added yet', address: saved.address || 'Not added yet' } : data.user;
+    return `<section class="profile-card form-panel"><div class="section-head compact"><div><div class="eyebrow">YOUR PROFILE</div><h2>Profile details</h2></div><a class="text-link" href="../dashboard/profile.html">Edit profile</a></div><div class="profile-card-grid"><div><span>Name</span><strong>${esc(profile.name)}</strong></div><div><span>Email</span><strong>${esc(profile.email)}</strong></div><div><span>Company</span><strong>${esc(profile.company)}</strong></div><div><span>Phone</span><strong>${esc(profile.phone)}</strong></div><div class="profile-card-wide"><span>Address</span><strong>${esc(profile.address)}</strong></div></div></section>`;
   }
 
   function activity() {
@@ -91,7 +99,7 @@
     if (page === 'client-dashboard') {
       if (query.has('project')) { root.innerHTML = projectDetail(query.get('project')); return true; }
       const saved = localProjects();
-      root.innerHTML = `<div class="workspace-start"><div><h2>What are you building next?</h2><p>Bring a model, explore an estimate and keep every revision in one place.</p></div><a class="btn" href="../dashboard/upload-design.html">Upload Your Design</a></div>${statCards()}<div class="section-head"><div><h2 style="font-size:25px">Your recent projects</h2><p>Active work across your prototype pipeline.</p></div><a class="text-link" href="../dashboard/upload-design.html">Start New Print</a></div><div class="grid dashboard-project-grid">${data.projects.map(projectCard).join('')}</div>${saved.length ? `<div class="section-head dashboard-subsection"><div><h2 style="font-size:25px">Your saved projects</h2><p>Stored locally in this browser account.</p></div></div><div class="record-list">${saved.map(p => `<article class="record-card form-panel"><div>${statusTag(p.status)}<h3>${esc(p.name)}</h3><p>${esc(p.fileName)}</p></div><a class="text-link" href="../dashboard/quotes.html">View saved project</a></article>`).join('')}</div>` : ''}${activity()}${localNotice}`;
+      root.innerHTML = `${profileCard()}<div class="workspace-start"><div><h2>What are you building next?</h2><p>Bring a model, explore an estimate and keep every revision in one place.</p></div><a class="btn" href="../dashboard/upload-design.html">Upload Your Design</a></div>${statCards()}<div class="section-head"><div><h2 style="font-size:25px">Your recent projects</h2><p>Active work across your prototype pipeline.</p></div><a class="text-link" href="../dashboard/upload-design.html">Start New Print</a></div><div class="grid dashboard-project-grid">${data.projects.map(projectCard).join('')}</div>${saved.length ? `<div class="section-head dashboard-subsection"><div><h2 style="font-size:25px">Your saved projects</h2><p>Stored locally in this browser account.</p></div></div><div class="record-list">${saved.map(p => `<article class="record-card form-panel"><div>${statusTag(p.status)}<h3>${esc(p.name)}</h3><p>${esc(p.fileName)}</p></div><a class="text-link" href="../dashboard/quotes.html">View saved project</a></article>`).join('')}</div>` : ''}${activity()}${localNotice}`;
     } else if (page === 'orders' || page === 'quotes') root.innerHTML = query.has(page === 'orders' ? 'order' : 'quote') ? recordDetail(page, query.get(page === 'orders' ? 'order' : 'quote')) : records(page, data[page]);
     else if (page === 'models') root.innerHTML = query.has('model') ? `<div class="detail-view"><a class="text-link" href="../dashboard/models.html">Back to models</a><h2>${esc(data.models.find(m => m.id === query.get('model'))?.name || 'Model details')}</h2><p>This model is analysed and ready for quotation.</p><div class="actions"><a class="btn" href="../dashboard/upload-design.html">Start a print</a></div></div>` : models();
     else if (page === 'saved-materials') root.innerHTML = materials();

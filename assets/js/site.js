@@ -46,6 +46,17 @@ if(document.body.dataset.protected && !user && !clientWorkspace) location.replac
 else $('#main')?.classList.remove('protected');
 $$('[data-theme-toggle]').forEach(b=>b.addEventListener('click',()=>setTheme(document.documentElement.dataset.theme==='dark'?'light':'dark')));
 $$('[data-direction-toggle]').forEach(b=>b.addEventListener('click',()=>setDirection(document.documentElement.dir==='rtl'?'ltr':'rtl')));
+// Services and Materials are single destination navigation links, not dropdown menus.
+$$('.navigation .nav-drop').forEach(drop=>{
+ const label=$('summary',drop)?.textContent.trim();
+ if(label!=='Services'&&label!=='Materials')return;
+ const destination=$('.dropdown a',drop);
+ if(!destination)return;
+ const link=document.createElement('a');
+ link.href=destination.href;
+ link.textContent=label;
+ drop.replaceWith(link);
+});
 const menuButton=$('.menu-toggle'), navigation=$('#navigation'), drawerOverlay=$('[data-drawer-overlay]'), drawerClose=$('[data-drawer-close]');
 function closeNavigation(){navigation?.classList.remove('open');drawerOverlay?.classList.remove('open');document.body.classList.remove('drawer-open');menuButton?.setAttribute('aria-expanded','false');menuButton?.setAttribute('aria-label','Open navigation');}
 menuButton?.addEventListener('click',()=>{const open=menuButton.getAttribute('aria-expanded')!=='true';menuButton.setAttribute('aria-expanded',String(open));menuButton.setAttribute('aria-label',open?'Close navigation':'Open navigation');navigation.classList.toggle('open',open);drawerOverlay?.classList.toggle('open',open);document.body.classList.toggle('drawer-open',open);});
@@ -61,7 +72,17 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape'){const open=$('detai
 $$('.navigation a').forEach(a=>{if(new URL(a.href).pathname===location.pathname||(location.pathname==='/'&&a.pathname==='/index.html')){a.classList.add('active');a.setAttribute('aria-current','page');a.closest('details')?.querySelector('summary')?.classList.add('active');}});
 const parentRoute=pageRoute.startsWith('/application-')?'/products.html':/^\/(creative-service-|services2|service-details\.html)/.test(pageRoute)?'/services.html':null;
 if(parentRoute){const parent=$$('.navigation a').find(a=>a.href===siteUrl(parentRoute));parent?.classList.add('active');parent?.closest('details')?.querySelector('summary')?.classList.add('active');}
+$$('.auth-form').forEach(form=>{
+ const eyebrow=$('.auth-form > .eyebrow',form), heading=$('.auth-form > h1',form), intro=$('.auth-form > p',form);
+ if(!eyebrow||!heading||!intro)return;
+ const introGroup=document.createElement('div');introGroup.className='auth-heading';eyebrow.before(introGroup);introGroup.append(eyebrow,heading,intro);
+ const social=document.createElement('div');social.className='auth-social';social.setAttribute('aria-label','Social sign-in options');
+ social.innerHTML='<button type="button" data-social-login="Google" aria-label="Continue with Google"><span class="social-icon" aria-hidden="true">G</span><span>Google</span></button><button type="button" data-social-login="GitHub" aria-label="Continue with GitHub"><span class="social-icon" aria-hidden="true">⌘</span><span>GitHub</span></button><button type="button" data-social-login="Microsoft" aria-label="Continue with Microsoft"><span class="social-icon social-icon-grid" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>Microsoft</span></button>';
+ const divider=document.createElement('div');divider.className='auth-divider';divider.innerHTML='<span>or continue with email</span>';
+ introGroup.after(social,divider);
+});
 $$('[data-password]').forEach(b=>b.addEventListener('click',()=>{const input=document.getElementById(b.dataset.password);const show=input.type==='password';input.type=show?'text':'password';b.textContent=show?'Hide':'Show';b.setAttribute('aria-label',show?'Hide password':'Show password');}));
+$$('[data-social-login]').forEach(b=>b.addEventListener('click',()=>status('#auth-status',`${b.dataset.socialLogin} sign-in is not connected in this demo.`)));
 $$('[data-auth-switch]').forEach(a=>{const next=new URLSearchParams(location.search).get('next');if(next)a.href+='?next='+encodeURIComponent(next);});
 const hex = bytes => [...new Uint8Array(bytes)].map(b=>b.toString(16).padStart(2,'0')).join('');
 async function passwordHash(password,salt){
