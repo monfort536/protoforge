@@ -1224,6 +1224,14 @@ main>.section.dark{background-color:rgba(19,35,47,.78)}
 [data-theme=dark] main>.section{background-color:transparent}
 [data-theme=dark] main>.section.dark{background-color:rgba(19,35,47,.76)}
 
+/* Home 02 keeps its own warm editorial art direction without the shared backdrop. */
+body[data-page="home-creative.html"]{background-image:none;background-color:var(--paper)}
+body[data-page="home-creative.html"] main{background-image:none;background-color:var(--paper)}
+body[data-page="home-creative.html"] .creator-hero{background-image:none;background-color:#f2eee6}
+[data-theme=dark] body[data-page="home-creative.html"]{background-color:var(--paper)}
+[data-theme=dark] body[data-page="home-creative.html"] main{background-color:var(--paper)}
+[data-theme=dark] body[data-page="home-creative.html"] .creator-hero{background-image:none;background-color:#1e2a35}
+
 /* About hero: keep the message focused and centered without the side image. */
 body[data-page="about.html"] .page-hero .split{display:block;max-width:960px;margin-inline:auto;text-align:center}
 body[data-page="about.html"] .page-hero .split>img{display:none}
