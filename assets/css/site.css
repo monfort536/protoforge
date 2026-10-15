@@ -1232,9 +1232,62 @@ body[data-page="home-creative.html"] .creator-hero{background-image:none;backgro
 [data-theme=dark] body[data-page="home-creative.html"] main{background-color:var(--paper)}
 [data-theme=dark] body[data-page="home-creative.html"] .creator-hero{background-image:none;background-color:#1e2a35}
 
+/* Light-mode hero copy uses true black for clear contrast. */
+.page-hero h1,.engineering-hero h1,.creator-hero h1,.story-hero h1,.hero h1{color:#000}
+.page-hero .lead,.engineering-hero .lead,.creator-hero .lead,.story-hero .lead,.hero .lead{color:#111}
+[data-theme=dark] .page-hero h1,[data-theme=dark] .engineering-hero h1,[data-theme=dark] .creator-hero h1,[data-theme=dark] .story-hero h1,[data-theme=dark] .hero h1{color:var(--ink)}
+[data-theme=dark] .page-hero .lead,[data-theme=dark] .engineering-hero .lead,[data-theme=dark] .creator-hero .lead,[data-theme=dark] .story-hero .lead,[data-theme=dark] .hero .lead{color:var(--muted)}
+
+/* Contact page content stays high-contrast over the shared light backdrop. */
+body[data-page="contact.html"] main>.section .split>div:first-child h2,
+body[data-page="contact.html"] main>.section .split>div:first-child h3{color:#000}
+body[data-page="contact.html"] main>.section .split>div:first-child p{color:#111}
+body[data-page="contact.html"] main>.section .split>div:first-child a.blue{color:var(--blue)}
+[data-theme=dark] body[data-page="contact.html"] main>.section .split>div:first-child h2,
+[data-theme=dark] body[data-page="contact.html"] main>.section .split>div:first-child h3{color:var(--ink)}
+[data-theme=dark] body[data-page="contact.html"] main>.section .split>div:first-child p{color:var(--muted)}
+body[data-page="contact.html"] .location>div h3{color:#000}
+body[data-page="contact.html"] .location>div p{color:#111}
+[data-theme=dark] body[data-page="contact.html"] .location>div h3{color:var(--ink)}
+[data-theme=dark] body[data-page="contact.html"] .location>div p{color:var(--muted)}
+body[data-page="contact.html"] .footer,
+body[data-page="contact.html"] .footer p,
+body[data-page="contact.html"] .footer .footer-links,
+body[data-page="contact.html"] .footer .footer-bottom,
+body[data-page="contact.html"] .footer .mono,
+body[data-page="contact.html"] .footer .preferences button{color:#000}
+[data-theme=dark] body[data-page="contact.html"] .footer,
+[data-theme=dark] body[data-page="contact.html"] .footer p,
+[data-theme=dark] body[data-page="contact.html"] .footer .footer-links,
+[data-theme=dark] body[data-page="contact.html"] .footer .footer-bottom,
+[data-theme=dark] body[data-page="contact.html"] .footer .mono,
+[data-theme=dark] body[data-page="contact.html"] .footer .preferences button{color:var(--muted)}
+
+/* Global light theme text contrast. */
+:root:not([data-theme="dark"]){--ink:#000;--muted:#000}
+:root:not([data-theme="dark"]) .process-strip{color:#000}
+[data-theme="dark"] .process-strip{color:var(--muted)}
+
 /* About hero: keep the message focused and centered without the side image. */
 body[data-page="about.html"] .page-hero .split{display:block;max-width:960px;margin-inline:auto;text-align:center}
 body[data-page="about.html"] .page-hero .split>img{display:none}
 body[data-page="about.html"] .page-hero .split .breadcrumb{justify-content:center}
 body[data-page="about.html"] .page-hero .split .eyebrow{justify-content:center}
 body[data-page="about.html"] .page-hero .split .lead{margin-inline:auto}
+body[data-page="home-creative.html"] .creator-intro .lead{display:block;margin:18px 0 0;max-width:520px}
+body[data-page="home-creative.html"] .creator-hero .container{display:grid;grid-template-columns:minmax(280px,.85fr) minmax(0,1.15fr);gap:44px;align-items:start}
+body[data-page="home-creative.html"] .creator-intro{grid-column:1;grid-row:1;grid-template-columns:1fr;max-width:none;margin:0;align-self:start}
+body[data-page="home-creative.html"] .creator-intro>div:last-child{justify-self:start}
+body[data-page="home-creative.html"] .creator-intro{transform:translateY(-14px)}
+body[data-page="home-creative.html"] .creator-board{grid-column:2;grid-row:1;margin:0;align-self:start}
+@media(max-width:767px){
+ body[data-page="home-creative.html"] .creator-hero .container{display:block}
+ body[data-page="home-creative.html"] .creator-intro{margin-bottom:30px}
+ body[data-page="home-creative.html"] .creator-board{margin-top:0}
+}
+
+/* Auth pages keep the story image on the left and a clean form surface on the right. */
+body[data-page="login.html"] main,
+body[data-page="register.html"] main{background-image:none;background-color:var(--paper)}
+body[data-page="login.html"] .auth-layout,
+body[data-page="register.html"] .auth-layout{background:var(--paper)}
