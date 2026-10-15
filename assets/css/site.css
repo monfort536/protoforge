@@ -1139,16 +1139,94 @@ body[data-page="contact.html"] .page-hero .lead{ margin-inline:auto; }
 .profile-card-wide{grid-column:1/-1}
 .auth-heading{text-align:center;margin-bottom:24px}
 .auth-heading p{margin-bottom:0}
-.auth-social{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-bottom:18px}
-.auth-social button{display:flex;align-items:center;justify-content:center;gap:7px;min-height:42px;padding:9px 8px;border:1px solid var(--line);border-radius:6px;background:var(--paper);color:var(--ink);font-size:12px;font-weight:600}
+.auth-social{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;width:100%;max-width:380px;margin:0 auto 14px}
+.auth-social button{display:flex;align-items:center;justify-content:center;gap:6px;min-height:38px;padding:7px 8px;border:1px solid var(--line);border-radius:6px;background:var(--paper);color:var(--ink);font-size:11px;font-weight:600}
 .auth-social button:hover,.auth-social button:focus-visible{border-color:var(--blue);color:var(--blue);background:var(--wash)}
-.social-icon{display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;font:700 14px/1 Manrope,sans-serif}
-.social-icon-grid{display:grid;grid-template-columns:repeat(2,6px);grid-template-rows:repeat(2,6px);gap:2px}
-.social-icon-grid i{display:block;background:currentColor}
+.social-icon{display:block;flex:0 0 14px;width:14px;height:14px}
 .auth-divider{display:flex;align-items:center;gap:12px;color:var(--muted);font-size:11px;margin:0 0 20px}
 .auth-divider:before,.auth-divider:after{content:'';height:1px;flex:1;background:var(--line)}
+.auth-social-status{color:var(--blue);font-size:13px;text-align:center;margin:14px 0 0}
+.auth-social-status:empty{display:none}
 @media(max-width:479px){
  .profile-card-grid{grid-template-columns:1fr}
  .profile-card-wide{grid-column:auto}
  .auth-social{grid-template-columns:1fr}
 }
+
+/* Shared centered page presentation with a subtle manufacturing backdrop. */
+body{
+ background-color:var(--paper);
+ background-image:linear-gradient(rgba(255,255,255,.6),rgba(255,255,255,.5)),url('../images/site-manufacturing-background.png');
+ background-position:center top;
+ background-size:cover;
+ background-repeat:no-repeat;
+ background-attachment:fixed;
+}
+[data-theme=dark] body{
+ background-image:linear-gradient(rgba(14,25,35,.88),rgba(14,25,35,.84)),url('../images/site-manufacturing-background.png');
+}
+.page-hero{
+ background-color:rgba(243,245,246,.86);
+ background-image:linear-gradient(rgba(243,245,246,.38),rgba(243,245,246,.48)),url('../images/site-manufacturing-background.png');
+ background-position:center;
+ background-size:cover;
+ background-repeat:no-repeat;
+}
+[data-theme=dark] .page-hero{
+ background-color:rgba(23,33,43,.86);
+ background-image:linear-gradient(rgba(23,33,43,.86),rgba(23,33,43,.9)),url('../images/site-manufacturing-background.png');
+}
+.page-hero .container>div:not(.split){max-width:960px;margin-inline:auto;text-align:center}
+.page-hero .container>div:not(.split) .breadcrumb{justify-content:center}
+.page-hero .container>div:not(.split) .eyebrow{justify-content:center}
+.page-hero .container>div:not(.split) .lead{margin-inline:auto}
+.page-hero .container>div:not(.split) .breadcrumb{max-width:100%;margin-inline:auto;line-height:1.5}
+.page-hero h1{max-width:960px;margin-inline:auto;line-height:1.04;text-wrap:balance}
+.page-hero .lead{max-width:760px;line-height:1.65}
+.page-hero{min-height:430px;display:grid;align-items:center}
+.page-hero:after{inset-inline-start:50%;transform:translateX(-50%)}
+.page-hero .container>div:not(.split),.page-hero .split>div{
+ background:rgba(255,255,255,.24);
+ padding:24px 30px;
+ border-radius:10px;
+ text-shadow:0 1px 1px rgba(255,255,255,.28);
+}
+.page-hero .breadcrumb{color:#2f485d}
+.page-hero .lead{color:#21394d;font-weight:550}
+[data-theme=dark] .page-hero .container>div:not(.split),[data-theme=dark] .page-hero .split>div{
+ background:rgba(14,25,35,.22);
+ text-shadow:none;
+}
+[data-theme=dark] .page-hero .breadcrumb,[data-theme=dark] .page-hero .lead{color:var(--muted)}
+.engineering-hero,.creator-hero,.story-hero{
+ background-image:linear-gradient(rgba(242,245,247,.42),rgba(242,245,247,.52)),url('../images/site-manufacturing-background.png');
+ background-position:center;
+ background-size:cover;
+ background-repeat:no-repeat;
+}
+[data-theme=dark] .engineering-hero,[data-theme=dark] .creator-hero,[data-theme=dark] .story-hero{
+ background-image:linear-gradient(rgba(23,33,43,.84),rgba(23,33,43,.9)),url('../images/site-manufacturing-background.png');
+}
+
+/* Continue the manufacturing backdrop through the full page, not only the hero. */
+main{
+ background-image:linear-gradient(rgba(255,255,255,.58),rgba(255,255,255,.64)),url('../images/site-manufacturing-background.png');
+ background-position:center top;
+ background-size:cover;
+ background-repeat:no-repeat;
+ background-attachment:fixed;
+}
+main>.section{background-color:transparent;background-image:none}
+main>.section.dark{background-color:rgba(19,35,47,.78)}
+[data-theme=dark] main{
+ background-image:linear-gradient(rgba(14,25,35,.78),rgba(14,25,35,.84)),url('../images/site-manufacturing-background.png');
+}
+[data-theme=dark] main>.section{background-color:transparent}
+[data-theme=dark] main>.section.dark{background-color:rgba(19,35,47,.76)}
+
+/* About hero: keep the message focused and centered without the side image. */
+body[data-page="about.html"] .page-hero .split{display:block;max-width:960px;margin-inline:auto;text-align:center}
+body[data-page="about.html"] .page-hero .split>img{display:none}
+body[data-page="about.html"] .page-hero .split .breadcrumb{justify-content:center}
+body[data-page="about.html"] .page-hero .split .eyebrow{justify-content:center}
+body[data-page="about.html"] .page-hero .split .lead{margin-inline:auto}

@@ -70,19 +70,31 @@ document.addEventListener('click',e=>{$$('details.nav-drop[open]').forEach(d=>{i
 $$('details.nav-drop').forEach(d=>d.addEventListener('toggle',()=>{if(d.open)$$('details.nav-drop').forEach(other=>{if(other!==d)other.open=false;});}));
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){const open=$('details.nav-drop[open]');if(open){open.open=false;$('summary',open).focus();}else if(navigation?.classList.contains('open')){closeNavigation();menuButton.focus();}}});
 $$('.navigation a').forEach(a=>{if(new URL(a.href).pathname===location.pathname||(location.pathname==='/'&&a.pathname==='/index.html')){a.classList.add('active');a.setAttribute('aria-current','page');a.closest('details')?.querySelector('summary')?.classList.add('active');}});
+$$('.breadcrumb').forEach(breadcrumb=>{
+ const label=breadcrumb.lastElementChild;
+ if(label)label.textContent=label.textContent.replace(/([a-z])([A-Z])/g,'$1 $2').replace(/\.(?=[A-Z])/g,'. ');
+});
 const parentRoute=pageRoute.startsWith('/application-')?'/products.html':/^\/(creative-service-|services2|service-details\.html)/.test(pageRoute)?'/services.html':null;
 if(parentRoute){const parent=$$('.navigation a').find(a=>a.href===siteUrl(parentRoute));parent?.classList.add('active');parent?.closest('details')?.querySelector('summary')?.classList.add('active');}
 $$('.auth-form').forEach(form=>{
  const eyebrow=$('.auth-form > .eyebrow',form), heading=$('.auth-form > h1',form), intro=$('.auth-form > p',form);
  if(!eyebrow||!heading||!intro)return;
  const introGroup=document.createElement('div');introGroup.className='auth-heading';eyebrow.before(introGroup);introGroup.append(eyebrow,heading,intro);
+ if(document.body.dataset.page==='register.html')return;
  const social=document.createElement('div');social.className='auth-social';social.setAttribute('aria-label','Social sign-in options');
- social.innerHTML='<button type="button" data-social-login="Google" aria-label="Continue with Google"><span class="social-icon" aria-hidden="true">G</span><span>Google</span></button><button type="button" data-social-login="GitHub" aria-label="Continue with GitHub"><span class="social-icon" aria-hidden="true">⌘</span><span>GitHub</span></button><button type="button" data-social-login="Microsoft" aria-label="Continue with Microsoft"><span class="social-icon social-icon-grid" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>Microsoft</span></button>';
+ // Social providers are defined immediately below so the demo buttons stay local.
+ social.innerHTML='<button type="button" data-social-login="Google" aria-label="Continue with Google"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M21.35 12.27c0-.72-.06-1.42-.18-2.09H12v3.96h5.24a4.48 4.48 0 0 1-1.94 2.94v2.45h3.14c1.84-1.7 2.91-4.2 2.91-7.26Z"/><path fill="#34A853" d="M12 21.72c2.63 0 4.83-.87 6.44-2.36l-3.14-2.45c-.87.58-1.98.92-3.3.92-2.54 0-4.7-1.72-5.47-4.03H3.29v2.53A9.73 9.73 0 0 0 12 21.72Z"/><path fill="#FBBC05" d="M6.53 13.8A5.84 5.84 0 0 1 6.22 12c0-.62.11-1.23.31-1.8V7.67H3.29A9.73 9.73 0 0 0 2.26 12c0 1.57.38 3.06 1.03 4.33l3.24-2.53Z"/><path fill="#EA4335" d="M12 6.17c1.43 0 2.71.49 3.72 1.45l2.79-2.79C16.83 3.27 14.63 2.28 12 2.28a9.73 9.73 0 0 0-8.71 5.39l3.24 2.53C7.3 7.89 9.46 6.17 12 6.17Z"/></svg><span>Google</span></button><button type="button" data-social-login="Apple" aria-label="Continue with Apple"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.05 12.54c-.02-2.18 1.78-3.23 1.86-3.28a4.03 4.03 0 0 0-3.17-1.72c-1.34-.14-2.62.8-3.3.8-.69 0-1.75-.78-2.87-.76a4.23 4.23 0 0 0-3.56 2.17c-1.53 2.65-.39 6.56 1.08 8.71.73 1.05 1.58 2.22 2.71 2.18 1.09-.04 1.5-.7 2.82-.7 1.31 0 1.68.7 2.83.68 1.17-.02 1.91-1.06 2.63-2.12a8.68 8.68 0 0 0 1.2-2.46 3.8 3.8 0 0 1-2.23-3.5Zm-2.17-6.41a3.84 3.84 0 0 0 .88-2.76 3.9 3.9 0 0 0-2.53 1.31 3.66 3.66 0 0 0-.91 2.65 3.22 3.22 0 0 0 2.56-1.2Z"/></svg><span>Apple</span></button>';
  const divider=document.createElement('div');divider.className='auth-divider';divider.innerHTML='<span>or continue with email</span>';
- introGroup.after(social,divider);
+ const socialStatus=document.createElement('p');socialStatus.className='auth-social-status';socialStatus.dataset.socialStatus='';socialStatus.setAttribute('role','status');socialStatus.setAttribute('aria-live','polite');
+ const authForm=$('form',form);
+ if(authForm)authForm.append(divider,social,socialStatus);else form.append(divider,social,socialStatus);
 });
 $$('[data-password]').forEach(b=>b.addEventListener('click',()=>{const input=document.getElementById(b.dataset.password);const show=input.type==='password';input.type=show?'text':'password';b.textContent=show?'Hide':'Show';b.setAttribute('aria-label',show?'Hide password':'Show password');}));
-$$('[data-social-login]').forEach(b=>b.addEventListener('click',()=>status('#auth-status',`${b.dataset.socialLogin} sign-in is not connected in this demo.`)));
+$$('[data-social-login]').forEach(b=>b.addEventListener('click',()=>{
+ const message=`Login successful with ${b.dataset.socialLogin}. This demo stays on this page.`;
+ const feedback=b.closest('.auth-form')?.querySelector('[data-social-status]');
+ if(feedback)feedback.textContent=message;else status('#auth-status',message);
+}));
 $$('[data-auth-switch]').forEach(a=>{const next=new URLSearchParams(location.search).get('next');if(next)a.href+='?next='+encodeURIComponent(next);});
 const hex = bytes => [...new Uint8Array(bytes)].map(b=>b.toString(16).padStart(2,'0')).join('');
 async function passwordHash(password,salt){
@@ -106,7 +118,14 @@ $('#loginForm')?.addEventListener('submit',async e=>{
  // Migrate legacy plaintext demo credentials on successful sign-in.
  if(account.password){account.salt=hex(crypto.getRandomValues(new Uint8Array(16)));account.hash=await passwordHash(password,account.salt);delete account.password;write('protoforge_users',users);}
  user={id:account.id,name:account.name,email:account.email,role:'client'};write('protoforge_current_user',user);renderAuthUI();status('#auth-status','Login successful. Your account is now authenticated.');
- }catch{status('#auth-status',localNotice,true);}finally{button.disabled=false;}
+ }catch{status('#auth-status',localNotice,true);}finally{
+  const form=e.currentTarget,passwordField=$('#password',form),passwordToggle=$('[data-password="password"]',form);
+  form.reset();
+  $('#email',form).value='';
+  passwordField.value='';passwordField.type='password';
+  if(passwordToggle){passwordToggle.textContent='Show';passwordToggle.setAttribute('aria-label','Show password');}
+  button.disabled=false;
+ }
 });
 if(/\/login\.html$/.test(location.pathname)){
   const clearLoginFields=()=>{const form=$('#loginForm');if(!form)return;form.setAttribute('autocomplete','off');$('#email').setAttribute('autocomplete','off');$('#password').setAttribute('autocomplete','new-password');form.reset();$('#email').value='';$('#password').value='';};
